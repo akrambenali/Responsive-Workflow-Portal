@@ -6,7 +6,7 @@ This project was created with  ng-bootstrap	V4 (https://github.com/ng-bootstrap/
 
 
 ## Dependencies  installation 
-Run 'npm install' for dependencies  instalation 
+Run `npm install` for dependencies  instalation 
 
 ## Development server
 
