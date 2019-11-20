@@ -1,0 +1,61 @@
+<h4 class="dark-purple title-card">
+    MY TO DO</h4>
+
+
+
+<form>
+    <div class="form-group form-inline">
+        Search Task: <input class="form-control ml-2" type="text" name="searchTerm" [(ngModel)]="service.searchTerm" />
+        <span class="ml-3" *ngIf="service.loading$ | async">Loading...</span>
+    </div>
+
+    <table class="table table-light">
+        <thead>
+            <tr>
+                <th scope="col" class="card-title grey">#</th>
+                <th scope="col" sortable="initator" (sort)="onSort($event)" class="card-title grey">Initiator</th>
+                <th scope="col" sortable="process" (sort)="onSort($event)" class="card-title grey">Process</th>
+                <th scope="col" sortable="description" (sort)="onSort($event)" class="card-title grey">Description</th>
+                <th scope=" col " sortable="initDate" (sort)="onSort($event)" class="card-title grey">Initiated Date</th>
+                <th scope="col " sortable="slaDate" (sort)="onSort($event)" class="card-title grey">SLA (Days)</th>
+                <th scope="col " sortable="action" (sort)="onSort($event)" class="card-title grey">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let task of tasks$ | async ">
+                <th scope="row ">{{ task.id }}</th>
+                <td>
+
+                    <ngb-highlight [result]="task.initator " [term]="service.searchTerm "></ngb-highlight>
+                </td>
+                <td>
+                    <ngb-highlight [result]="task.process " [term]="service.searchTerm "></ngb-highlight>
+                </td>
+                <td>
+                    <ngb-highlight [result]="task.description "></ngb-highlight>
+                </td>
+                <td>
+                    <ngb-highlight [result]="task.initDate " [term]="service.searchTerm "></ngb-highlight>
+                </td>
+                <td>
+                    <ngb-highlight [result]="task.slaDate "></ngb-highlight>
+                </td>
+                <td>
+                    <ngb-highlight [result]="task.action "></ngb-highlight>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="d-flex justify-content-between p-2 ">
+        <ngb-pagination [collectionSize]="total$ | async " [(page)]="service.page " [pageSize]="service.pageSize ">
+        </ngb-pagination>
+
+        <select class="custom-select " style="width: auto " name="pageSize " [(ngModel)]="service.pageSize ">
+      <option [ngValue]="5 ">5 items per page</option>
+      <option [ngValue]="10 ">10 items per page</option>
+      <option [ngValue]="25 ">25 items per page</option>
+    </select>
+    </div>
+
+</form>
