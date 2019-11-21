@@ -1,0 +1,79 @@
+<div class="wrapper">
+    <!-- Sidebar Holder -->
+    <nav id="sidebar" [ngClass]="status ? 'active' : ''">
+        <div class="sidebar-header">
+            <h3>Dashboard</h3>
+        </div>
+
+        <ul class="list-unstyled components">
+            <p>BPM Portal</p>
+            <li class="active">
+                <a routerLink="/home"><i class="material-icons">home</i>Home</a>
+
+            </li>
+            <li>
+                <a routerLink="/newrequest"><i class="material-icons">fiber_new</i>New request</a>
+
+            </li>
+            <li>
+                <a href="#"><i class="material-icons">list</i>My Requests (in Progress)</a>
+            </li>
+            <li>
+                <a href="#"><i class="material-icons">done</i>My Requests (Done)</a>
+            </li>
+            <li>
+                <a href="#"><i class="material-icons">assignment</i>My to do</a>
+            </li>
+            <li>
+                <a href="#"><i class="material-icons">assessment</i>Reports</a>
+            </li>
+
+        </ul>
+
+        <ul class="list-unstyled CTAs">
+
+            <li>
+                <a class="article"><i class="material-icons">exit_to_app</i>LogOut</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="content">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+
+                <button type="button" id="sidebarCollapse" class="navbar-btn" (click)="clickEvent()" [ngClass]="status ? 'active' : ''">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Page</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Page</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Page</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Page</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+            </div>
+        </nav>
+        <app-home-cards></app-home-cards>
+        <app-tasklist-in-progress></app-tasklist-in-progress>
+    </div>
+
+</div>

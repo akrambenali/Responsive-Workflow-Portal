@@ -1,0 +1,41 @@
+[{
+        "title": "Human Resources",
+        "subtitle": "Really, they are!",
+        "imgsource": "assets/RH.jpg",
+        "detail": "Something pretty..",
+        "category": "HR",
+        "redirectionurl": "HumanResources"
+    },
+    {
+        "title": "Procurement",
+        "subtitle": "Really, they are!",
+        "imgsource": "assets/PROCURMENT.jpg",
+        "detail": "Something pretty..",
+        "category": "Procurement",
+        "redirectionurl": "/HumanResources"
+    },
+    {
+        "title": "Marketing",
+        "subtitle": "Really, they are!",
+        "imgsource": "assets/MARKETING.jpg",
+        "detail": "Something pretty..",
+        "category": "MKT",
+        "redirectionurl": "/HumanResources"
+    },
+    {
+        "title": "Finance",
+        "subtitle": "Really, they are!",
+        "imgsource": "assets/FINANCE.jpg",
+        "detail": "Something pretty..",
+        "category": "Finance",
+        "redirectionurl": "/HumanResources"
+    },
+    {
+        "title": "IT",
+        "subtitle": "Really, they are!",
+        "imgsource": "assets/IT.jpg",
+        "detail": "Something pretty..",
+        "category": "IT",
+        "redirectionurl": "/HumanResources"
+    }
+]
