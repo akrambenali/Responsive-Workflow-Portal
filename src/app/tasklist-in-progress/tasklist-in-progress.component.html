@@ -24,24 +24,27 @@
         <tbody>
             <tr *ngFor="let task of tasks$ | async ">
                 <th scope="row ">{{ task.id }}</th>
-                <td>
+                <td data-column="Initiator">
 
                     <ngb-highlight [result]="task.initator " [term]="service.searchTerm "></ngb-highlight>
                 </td>
-                <td>
+                <td data-column="Process">
                     <ngb-highlight [result]="task.process " [term]="service.searchTerm "></ngb-highlight>
                 </td>
-                <td>
+                <td data-column="Description">
                     <ngb-highlight [result]="task.description "></ngb-highlight>
                 </td>
-                <td>
+                <td data-column="Initiated Date">
                     <ngb-highlight [result]="task.initDate " [term]="service.searchTerm "></ngb-highlight>
                 </td>
-                <td>
+                <td data-column="SLA (Days)">
                     <ngb-highlight [result]="task.slaDate "></ngb-highlight>
                 </td>
-                <td>
+                <td data-column="Actions">
                     <ngb-highlight [result]="task.action "></ngb-highlight>
+                    <!--  <button type="button" class="btn btn-primary"><i class="material-icons">remove_red_eye</i></button> -->
+                    <button type="button" class="btn btn-success margin-button"><i class="material-icons">check_circle</i></button>
+                    <button type="button" class="btn btn-danger margin-button"><i class="material-icons">delete_forever</i></button>
                 </td>
             </tr>
         </tbody>
@@ -52,9 +55,9 @@
         </ngb-pagination>
 
         <select class="custom-select " style="width: auto " name="pageSize " [(ngModel)]="service.pageSize ">
-      <option [ngValue]="5 ">5 items per page</option>
-      <option [ngValue]="10 ">10 items per page</option>
-      <option [ngValue]="25 ">25 items per page</option>
+      <option [ngValue]="5 ">5 items </option>
+      <option [ngValue]="10 ">10 items </option>
+      <option [ngValue]="25 ">25 items </option>
     </select>
     </div>
 

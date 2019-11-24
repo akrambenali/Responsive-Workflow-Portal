@@ -11,10 +11,13 @@ import { HttpErrorResponse } from '@angular/common/http';
 export class NewRequestComponent implements OnInit {
 
   liste = {};
-
   constructor(private httpService: HttpClient, private router: Router, private route: ActivatedRoute) { }
   processCategory: string[];
   processList: string[];
+  status = false;
+  clickEvent() {
+    this.status = !this.status;
+  }
   ngOnInit() {
     this.httpService.get('./assets/ParentCards.json').subscribe(
       data => {

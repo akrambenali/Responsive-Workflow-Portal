@@ -8,7 +8,7 @@ export const TASKS: Task[] = [
     description: 'SSD DETAILS',
     initDate: '11-11-2019',
     slaDate: 1,
-    action: 'detail'
+    action: ''
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ export const TASKS: Task[] = [
     description: 'SSD DETAILS',
     initDate: '20-11-2019',
     slaDate: 3,
-    action: 'detail'
+    action: ''
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ export const TASKS: Task[] = [
     description: 'SSD DETAILS',
     initDate: '20-11-2019',
     slaDate: 4,
-    action: 'detail'
+    action: ''
   },
   {
     id: 4,
@@ -35,7 +35,7 @@ export const TASKS: Task[] = [
     description: 'SSD DETAILS',
     initDate: '20-11-2019',
     slaDate: 5,
-    action: 'detail'
+    action: ''
   },
   {
     id: 5,
@@ -44,7 +44,7 @@ export const TASKS: Task[] = [
     description: 'SSD DETAILS',
     initDate: '20-11-2019',
     slaDate: 5,
-    action: 'detail'
+    action: ''
   },
   {
     id: 6,
@@ -53,7 +53,7 @@ export const TASKS: Task[] = [
     description: 'SSD DETAILS',
     initDate: '20-11-2019',
     slaDate: 3,
-    action: 'detail'
+    action: ''
   },
   {
     id: 7,
@@ -62,7 +62,7 @@ export const TASKS: Task[] = [
     description: 'SSD DETAILS',
     initDate: '20-11-2019',
     slaDate: 8,
-    action: 'detail'
+    action: ''
   },
   {
     id: 8,
@@ -71,7 +71,7 @@ export const TASKS: Task[] = [
     description: 'SSD DETAILS',
     initDate: '20-11-2019',
     slaDate: 8,
-    action: 'detail'
+    action: ''
   },
   {
     id: 9,
@@ -80,7 +80,7 @@ export const TASKS: Task[] = [
     description: 'SSD DETAILS',
     initDate: '20-11-2019',
     slaDate: 9,
-    action: 'detail'
+    action: ''
   },
   {
     id: 10,
@@ -89,7 +89,7 @@ export const TASKS: Task[] = [
     description: 'SSD DETAILS',
     initDate: '20-11-2019',
     slaDate: 10,
-    action: 'detail'
+    action: ''
   },
   {
     id: 11,
@@ -98,7 +98,7 @@ export const TASKS: Task[] = [
     description: 'SSD DETAILS',
     initDate: '20-11-2019',
     slaDate: 5,
-    action: 'detail'
+    action: ''
   },
   {
     id: 12,
@@ -107,7 +107,7 @@ export const TASKS: Task[] = [
     description: 'SSD DETAILS',
     initDate: '20-11-2019',
     slaDate: 11,
-    action: 'detail'
+    action: ''
   },
   {
     id: 13,
@@ -116,6 +116,6 @@ export const TASKS: Task[] = [
     description: 'SSD DETAILS',
     initDate: '20-11-2019',
     slaDate: 9,
-    action: 'detail'
+    action: ''
   }
 ];
