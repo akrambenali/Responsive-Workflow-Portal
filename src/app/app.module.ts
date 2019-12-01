@@ -4,7 +4,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HttpClient} from '@angular/common/http';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -17,7 +19,10 @@ import { NgbdSortableHeader } from './tasklist-in-progress/sortable.directive';
 import { NewRequestComponent } from './new-request/new-request.component';
 import { LayoutHomeMenuComponent } from './layout-menu-home/layout-menu.component';
 
-
+// AoT requires an exported function for factories
+export function HttpLoaderFactory(httpClient: HttpClient) {
+  return new TranslateHttpLoader(httpClient);
+}
 
 
 
@@ -41,8 +46,14 @@ import { LayoutHomeMenuComponent } from './layout-menu-home/layout-menu.componen
     FormsModule,
     ReactiveFormsModule,
     CommonModule,
-    HttpClientModule
-
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    })
 
 
   ],

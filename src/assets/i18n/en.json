@@ -1,0 +1,30 @@
+{
+    "MENU": {
+        "TITLE": "Dashboard",
+        "SUBTITLE": "BPM Portal",
+        "HOME": "Home",
+        "NEW-REQUEST": "New request",
+        "REQUEST-INPROGRESS": "My Requests (in Progress)",
+        "REQUEST-DONE": "My Requests (Done)",
+        "MYTODO": "My to do",
+        "REPORTS": "Reports",
+        "HOME-LANG": "languages",
+        "LOGOUT": "LogOut"
+
+    },
+    "HOME": {
+        "TITLE": "Hello Angular with ngx-translate!",
+        "SELECT": "Change language"
+
+    },
+    "CARD": {
+        "TITLE-REQUESTED": "Requests initiated",
+        "TITLE-PROGRESS": "Requests in progress",
+        "TITLE-DONE": "Requests done",
+        "CARD-TITLE": "Overview"
+    },
+    "TASKSLIST": {
+        "TITLE": "MY TO DO"
+
+    }
+}

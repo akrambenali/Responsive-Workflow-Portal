@@ -23,6 +23,8 @@
         "@fortawesome/fontawesome-svg-core": "^1.2.25",
         "@fortawesome/free-solid-svg-icons": "^5.11.2",
         "@ng-bootstrap/ng-bootstrap": "^4.0.0",
+        "@ngx-translate/core": "^11.0.1",
+        "@ngx-translate/http-loader": "^4.0.0",
         "bootstrap": "^4.3.1",
         "core-js": "^2.5.4",
         "jquery": "^3.4.1",

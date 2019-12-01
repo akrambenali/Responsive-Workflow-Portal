@@ -1,0 +1,30 @@
+{
+    "MENU": {
+        "TITLE": "Dashboard",
+        "SUBTITLE": "BPM Portal",
+        "HOME": "Acceuil",
+        "NEW-REQUEST": "Nouvelle demande",
+        "REQUEST-INPROGRESS": "Mes demandes (en cours)",
+        "REQUEST-DONE": "Mes demandes (terminées)",
+        "MYTODO": "Mes tâches",
+        "REPORTS": "Rapports",
+        "HOME-LANG": "langues",
+        "LOGOUT": "Se déconnecter"
+
+    },
+    "HOME": {
+        "TITLE": "Bonjour Angular avec ngx-translate !",
+        "SELECT": "Changer la langue"
+
+    },
+    "CARD": {
+        "TITLE-REQUESTED": "Demandes initiées",
+        "TITLE-PROGRESS": "Demandes en cours",
+        "TITLE-DONE": "Demandes terminées",
+        "CARD-TITLE": "Vue d'ensemble"
+    },
+    "TASKSLIST": {
+        "TITLE": "Mes tâches"
+
+    }
+}
