@@ -25,16 +25,16 @@
             <tr *ngFor="let task of tasks$ | async ">
                 <th scope="row ">{{ task.id }}</th>
                 <td attr.data-column="{{ 'TASKSLIST.INITIATOR' | translate }}">
-                    <ngb-highlight [result]="task.initator" [term]="service.searchTerm "></ngb-highlight>
+                    <ngb-highlight [result]="task.initator" [term]="service.searchTerm"></ngb-highlight>
                 </td>
                 <td attr.data-column="{{ 'TASKSLIST.PROCESS' | translate }}">
-                    <ngb-highlight [result]="task.process " [term]="service.searchTerm "></ngb-highlight>
+                    <ngb-highlight [result]="task.process " [term]="service.searchTerm"></ngb-highlight>
                 </td>
                 <td attr.data-column="{{ 'TASKSLIST.DESCRIPTION' | translate }}">
                     <ngb-highlight [result]="task.description "></ngb-highlight>
                 </td>
                 <td attr.data-column="{{ 'TASKSLIST.DESCRIPTION' | translate }}">
-                    <ngb-highlight [result]="task.initDate " [term]="service.searchTerm "></ngb-highlight>
+                    <ngb-highlight [result]="task.initDate " [term]="service.searchTerm"></ngb-highlight>
                 </td>
                 <td attr.data-column="{{ 'TASKSLIST.SLA' | translate }}">
                     <ngb-highlight [result]="task.slaDate "></ngb-highlight>
