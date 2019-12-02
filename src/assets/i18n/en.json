@@ -24,7 +24,15 @@
         "CARD-TITLE": "Overview"
     },
     "TASKSLIST": {
-        "TITLE": "MY TO DO"
-
+        "TITLE": "MY TO DO",
+        "SEARCH": "Search Task:",
+        "LOADING": "Loading...",
+        "INITIATOR": "Initiator",
+        "PROCESS": "Process",
+        "DESCRIPTION": "Description",
+        "INITDATE": "Initiated Date",
+        "SLA": "SLA(Days)",
+        "ACTION": "Actions ",
+        "ITEMS": "items"
     }
 }

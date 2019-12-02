@@ -5,46 +5,45 @@
 
 <form>
     <div class="form-group form-inline">
-        Search Task: <input class="form-control ml-2" type="text" name="searchTerm" [(ngModel)]="service.searchTerm" />
-        <span class="ml-3" *ngIf="service.loading$ | async">Loading...</span>
+        {{ 'TASKSLIST.SEARCH' | translate }} <input class="form-control ml-2" type="text" name="searchTerm" [(ngModel)]="service.searchTerm" />
+        <span class="ml-3" *ngIf="service.loading$ | async">{{ 'TASKSLIST.LOADING' | translate }}</span>
     </div>
 
     <table class="table table-light">
         <thead>
             <tr>
                 <th scope="col" class="card-title grey">#</th>
-                <th scope="col" sortable="initator" class="card-title grey">Initiator <i class="material-icons">unfold_more</i></th>
-                <th scope="col" sortable="process" (sort)="onSort($event)" class="card-title grey">Process <i class="material-icons">unfold_more</i></th>
-                <th scope="col" sortable="description" (sort)="onSort($event)" class="card-title grey">Description <i class="material-icons">unfold_more</i></th>
-                <th scope=" col " sortable="initDate" (sort)="onSort($event)" class="card-title grey">Initiated Date <i class="material-icons">unfold_more</i></th>
-                <th scope="col " sortable="slaDate" (sort)="onSort($event)" class="card-title grey">SLA (Days) <i class="material-icons">unfold_more</i></th>
-                <th scope="col " sortable="action" (sort)="onSort($event)" class="card-title grey">Actions <i class="material-icons">unfold_more</i></th>
+                <th scope="col" sortable="initator" (sort)="onSort($event)" class=" card-title grey ">{{ 'TASKSLIST.INITIATOR' | translate }} <i class="material-icons ">unfold_more</i></th>
+                <th scope="col " sortable="process " (sort)="onSort($event) " class="card-title grey ">{{ 'TASKSLIST.PROCESS' | translate }} <i class="material-icons ">unfold_more</i></th>
+                <th scope="col " sortable="description " (sort)="onSort($event) " class="card-title grey ">{{ 'TASKSLIST.DESCRIPTION' | translate }} <i class="material-icons ">unfold_more</i></th>
+                <th scope=" col " sortable="initDate " (sort)="onSort($event) " class="card-title grey ">{{ 'TASKSLIST.DESCRIPTION' | translate }} <i class="material-icons ">unfold_more</i></th>
+                <th scope="col " sortable="slaDate " (sort)="onSort($event) " class="card-title grey ">{{ 'TASKSLIST.SLA' | translate }}<i class="material-icons ">unfold_more</i></th>
+                <th scope="col " sortable="action " (sort)="onSort($event) " class="card-title grey ">{{ 'TASKSLIST.ACTION' | translate }} <i class="material-icons ">unfold_more</i></th>
             </tr>
         </thead>
         <tbody>
             <tr *ngFor="let task of tasks$ | async ">
                 <th scope="row ">{{ task.id }}</th>
-                <td data-column="Initiator">
-
-                    <ngb-highlight [result]="task.initator " [term]="service.searchTerm "></ngb-highlight>
+                <td attr.data-column="{{ 'TASKSLIST.INITIATOR' | translate }}">
+                    <ngb-highlight [result]="task.initator" [term]="service.searchTerm "></ngb-highlight>
                 </td>
-                <td data-column="Process">
+                <td attr.data-column="{{ 'TASKSLIST.PROCESS' | translate }}">
                     <ngb-highlight [result]="task.process " [term]="service.searchTerm "></ngb-highlight>
                 </td>
-                <td data-column="Description">
+                <td attr.data-column="{{ 'TASKSLIST.DESCRIPTION' | translate }}">
                     <ngb-highlight [result]="task.description "></ngb-highlight>
                 </td>
-                <td data-column="Initiated Date">
+                <td attr.data-column="{{ 'TASKSLIST.DESCRIPTION' | translate }}">
                     <ngb-highlight [result]="task.initDate " [term]="service.searchTerm "></ngb-highlight>
                 </td>
-                <td data-column="SLA (Days)">
+                <td attr.data-column="{{ 'TASKSLIST.SLA' | translate }}">
                     <ngb-highlight [result]="task.slaDate "></ngb-highlight>
                 </td>
-                <td data-column="Actions">
+                <td attr.data-column="{{ 'TASKSLIST.ACTION' | translate }}">
                     <ngb-highlight [result]="task.action "></ngb-highlight>
-                    <!--  <button type="button" class="btn btn-primary"><i class="material-icons">remove_red_eye</i></button> -->
-                    <button type="button" class="btn btn-success margin-button"><i class="material-icons">check_circle</i></button>
-                    <button type="button" class="btn btn-danger margin-button"><i class="material-icons">delete_forever</i></button>
+                    <!--  <button type="button " class="btn btn-primary "><i class="material-icons ">remove_red_eye</i></button> -->
+                    <button type="button " class="btn btn-success margin-button "><i class="material-icons ">check_circle</i></button>
+                    <button type="button " class="btn btn-danger margin-button "><i class="material-icons ">delete_forever</i></button>
                 </td>
             </tr>
         </tbody>
@@ -55,9 +54,9 @@
         </ngb-pagination>
 
         <select class="custom-select " style="width: auto " name="pageSize " [(ngModel)]="service.pageSize ">
-      <option [ngValue]="5 ">5 items </option>
-      <option [ngValue]="10 ">10 items </option>
-      <option [ngValue]="25 ">25 items </option>
+      <option [ngValue]="5 ">5 {{ 'TASKSLIST.ITEMS' | translate }} </option>
+      <option [ngValue]="10 ">10 {{ 'TASKSLIST.ITEMS' | translate }} </option>
+      <option [ngValue]="25 ">25 {{ 'TASKSLIST.ITEMS' | translate }} </option>
     </select>
     </div>
 

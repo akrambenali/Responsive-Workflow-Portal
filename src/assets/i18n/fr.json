@@ -24,7 +24,16 @@
         "CARD-TITLE": "Vue d'ensemble"
     },
     "TASKSLIST": {
-        "TITLE": "Mes tâches"
+        "TITLE": "Mes tâches",
+        "SEARCH": "Recherche de tâche",
+        "LOADING": "Chargement...",
+        "INITIATOR": "Initiateur",
+        "PROCESS": "Processus",
+        "DESCRIPTION": "Description",
+        "INITDATE": "Date d 'Initiation",
+        "SLA": "SLA(Jours)",
+        "ACTION": "Actions",
+        "ITEMS": "Lignes"
 
     }
 }
