@@ -68,8 +68,8 @@
 
             </div>
         </nav>
-        <div class="card-deck">
-            <div class="col-md-6 col-sm-6 col-lg-4 " *ngFor="let process of processCategory ">
+        <div class="card-columns">
+            <!--  <div class="col-md-6 col-sm-6 col-lg-4 " *ngFor="let process of processCategory">
                 <div class="card margin-card">
                     <img class="card-img-top " src="{{process.imgsource}} " alt="Card image cap ">
                     <div class="card-body ">
@@ -78,21 +78,23 @@
                         <a routerLink="/processlist">link</a>
                     </div>
                 </div>
-            </div>
-
-            <!--   <div class="card col-md-6 col-sm-6 col-lg-4 mb-3" *ngFor="let process of processCategory">
-                <div class="row no-gutters">
-                    <div class="col-md-4">
-                        <img src="{{process.imgsource}}" class="card-img" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">{{process.title}}</h5>
-                            <p class="card-text">{{process.subtitle}}</p>
-                            <p class="card-text"> <a routerLink="/processlist">link</a></p>
+            </div> -->
+            <div class="col-xl col-md-12 col-lg-12 col-sm-6 pb-3" *ngFor="let process of processCategory">
+                <div class="card  h-100">
+                    <!-- -->
+                    <div class="row h-100 no-gutters">
+                        <div class="col-6 p-3">
+                            <h5>{{process.title}}</h5>
+                            <h2>{{process.subtitle}}</h2>
+                        </div>
+                        <div class="col bg-inverse text-white d-flex">
+                            <h1 class="mx-auto align-self-center">
+                                <i class="material-icons grey icon-size">assessment</i>
+                            </h1>
                         </div>
                     </div>
                 </div>
-            </div> -->
+            </div>
+
         </div>
     </div>

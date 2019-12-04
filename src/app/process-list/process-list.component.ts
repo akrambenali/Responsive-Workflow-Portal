@@ -11,7 +11,7 @@ import { HttpErrorResponse } from '@angular/common/http';
 })
 export class ProcessListComponent implements OnInit {
   liste = {};
-  status = false;
+  status = true;
   processCategory: string[];
   processList: string[];
   clickEvent() {
