@@ -34,10 +34,38 @@
         "redirectionurl": ""
     },
     {
+        "title": "Mailing",
+        "subtitle": "Really, they are!",
+        "imgsource": "assets/IT.jpg",
+        "category": "MKT",
+        "redirectionurl": ""
+    },
+    {
+        "title": "DARIS",
+        "subtitle": "Really, they are!",
+        "imgsource": "assets/IT.jpg",
+        "category": "MKT",
+        "redirectionurl": ""
+    },
+    {
+        "title": "VPN",
+        "subtitle": "Really, they are!",
+        "imgsource": "assets/IT.jpg",
+        "category": "MKT",
+        "redirectionurl": ""
+    },
+    {
+        "title": "ACL",
+        "subtitle": "Really, they are!",
+        "imgsource": "assets/IT.jpg",
+        "category": "MKT",
+        "redirectionurl": ""
+    },
+    {
         "title": "DARI",
         "subtitle": "Really, they are!",
         "imgsource": "assets/IT.jpg",
-        "category": "IT",
+        "category": "MKT",
         "redirectionurl": ""
     }
 ]

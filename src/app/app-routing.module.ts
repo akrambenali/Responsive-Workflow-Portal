@@ -11,6 +11,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent},
   { path: 'newrequest', component: NewRequestComponent},
   { path: 'processlist', component: ProcessListComponent},
+  { path: 'processlist/:category', component: ProcessListComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
 

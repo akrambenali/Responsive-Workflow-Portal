@@ -75,7 +75,7 @@
                     <div class="card-body ">
                         <h5 class="card-title">{{process.title}}</h5>
                         <p class="card-text "> {{process.subtitle}} {{process.detail}} </p>
-                        <a routerLink="/processlist">link</a>
+                        <a [routerLink]="['/processlist', process.category]">link</a>
                     </div>
                 </div>
             </div>
