@@ -70,12 +70,12 @@
         </nav>
         <div class="card-deck">
             <div class="col-md-6 col-sm-6 col-lg-4 " *ngFor="let process of processCategory ">
-                <div class="card margin-card">
+                <div class="card margin-card" [routerLink]="['/processlist', process.category]">
                     <img class="card-img-top " src="{{process.imgsource}} " alt="Card image cap ">
                     <div class="card-body ">
                         <h5 class="card-title">{{process.title}}</h5>
                         <p class="card-text "> {{process.subtitle}} {{process.detail}} </p>
-                        <a [routerLink]="['/processlist', process.category]">link</a>
+
                     </div>
                 </div>
             </div>
