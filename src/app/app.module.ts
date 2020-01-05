@@ -19,6 +19,8 @@ import { NgbdSortableHeader } from './tasklist-in-progress/sortable.directive';
 import { NewRequestComponent } from './new-request/new-request.component';
 import { LayoutHomeMenuComponent } from './layout-menu-home/layout-menu.component';
 import { ProcessListComponent } from './process-list/process-list.component';
+import { MyRequestDoneComponent } from './my-request-done/my-request-done.component';
+import { TasklistInDoneComponent} from './tasklist-in-done/tasklist-in-done.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -37,7 +39,9 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     NgbdSortableHeader,
     NewRequestComponent,
     LayoutHomeMenuComponent,
-    ProcessListComponent
+    ProcessListComponent,
+    MyRequestDoneComponent,
+    TasklistInDoneComponent
 
   ],
   imports: [

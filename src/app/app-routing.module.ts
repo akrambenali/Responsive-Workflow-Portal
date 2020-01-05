@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { NewRequestComponent } from './new-request/new-request.component';
 import { ProcessListComponent } from './process-list/process-list.component';
+import { MyRequestDoneComponent } from './my-request-done/my-request-done.component';
 
 const routes: Routes = [
 
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'newrequest', component: NewRequestComponent},
   { path: 'processlist', component: ProcessListComponent},
   { path: 'processlist/:category', component: ProcessListComponent },
+  { path: 'myrequestdone', component: MyRequestDoneComponent},
   { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
 
