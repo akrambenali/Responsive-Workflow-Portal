@@ -21,6 +21,7 @@ import { LayoutHomeMenuComponent } from './layout-menu-home/layout-menu.componen
 import { ProcessListComponent } from './process-list/process-list.component';
 import { MyRequestDoneComponent } from './my-request-done/my-request-done.component';
 import { TasklistInDoneComponent} from './tasklist-in-done/tasklist-in-done.component';
+import { DelegationComponent } from './delegation/delegation.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -41,7 +42,8 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     LayoutHomeMenuComponent,
     ProcessListComponent,
     MyRequestDoneComponent,
-    TasklistInDoneComponent
+    TasklistInDoneComponent,
+    DelegationComponent
 
   ],
   imports: [

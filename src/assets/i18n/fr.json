@@ -9,7 +9,8 @@
         "MYTODO": "Mes tâches",
         "REPORTS": "Rapports",
         "HOME-LANG": "langues",
-        "LOGOUT": "Se déconnecter"
+        "LOGOUT": "Se déconnecter",
+        "DELEGATE": "Délégation"
 
     },
     "HOME": {
@@ -33,7 +34,17 @@
         "INITDATE": "Date d 'Initiation",
         "SLA": "SLA(Jours)",
         "ACTION": "Actions",
-        "ITEMS": "Lignes"
+        "ITEMS": "Lignes",
+        "VALIDATE": "Valider",
+        "REJECT": "Rejeter",
+        "DETAILS": "Détails",
+        "FILTER": "Filtrer par"
 
+    },
+    "DELEGATION": {
+        "SUBMIT": "Soumettre",
+        "NAME": "Nom",
+        "FROM": "De",
+        "TO": "A"
     }
 }

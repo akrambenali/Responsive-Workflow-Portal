@@ -9,7 +9,8 @@
         "MYTODO": "My to do",
         "REPORTS": "Reports",
         "HOME-LANG": "languages",
-        "LOGOUT": "LogOut"
+        "LOGOUT": "LogOut",
+        "DELEGATE": "Delegation"
 
     },
     "HOME": {
@@ -33,6 +34,16 @@
         "INITDATE": "Initiated Date",
         "SLA": "SLA(Days)",
         "ACTION": "Actions ",
-        "ITEMS": "items"
+        "ITEMS": "items",
+        "VALIDATE": "Validate",
+        "REJECT": "Reject ",
+        "DETAILS": "Details",
+        "FILTER": "Filter by"
+    },
+    "DELEGATION": {
+        "SUBMIT": "Submit",
+        "NAME": "Name",
+        "FROM": "From",
+        "TO": "To"
     }
 }

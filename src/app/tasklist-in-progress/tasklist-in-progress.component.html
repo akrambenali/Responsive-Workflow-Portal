@@ -7,7 +7,12 @@
     <div class="form-group form-inline">
         {{ 'TASKSLIST.SEARCH' | translate }} <input class="form-control ml-2" type="text" name="searchTerm" [(ngModel)]="service.searchTerm" />
         <span class="ml-3" *ngIf="service.loading$ | async">{{ 'TASKSLIST.LOADING' | translate }}</span>
+        <div class="col">
+            <div class="float-right"><span>{{ 'TASKSLIST.FILTER' | translate }}<i class="material-icons ">filter_list</i></span></div>
+        </div>
+
     </div>
+
 
     <table class="table table-light">
         <thead>
@@ -42,9 +47,9 @@
                 <td attr.data-column="{{ 'TASKSLIST.ACTION' | translate }}">
                     <ngb-highlight [result]="task.action "></ngb-highlight>
                     <!--  <button type="button " class="btn btn-primary "><i class="material-icons ">remove_red_eye</i></button> -->
-                    <button type="button " class="btn blue"><i class="material-icons ">check_circle</i></button>
-                    <button type="button " class="btn red"><i class="material-icons ">delete_forever</i></button>
-                    <button type="button " class="btn grey"><i class="material-icons ">add_box</i></button>
+                    <button type="button " class="btn green"><i class="material-icons ">check_circle</i>{{ 'TASKSLIST.VALIDATE' | translate }}</button>
+                    <button type="button " class="btn red"><i class="material-icons ">clear</i>{{ 'TASKSLIST.REJECT' | translate }}</button>
+                    <button type="button " class="btn grey-color"><i class="material-icons ">add_box</i>{{ 'TASKSLIST.DETAILS' | translate }}</button>
                 </td>
             </tr>
         </tbody>

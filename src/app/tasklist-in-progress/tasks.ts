@@ -8,6 +8,7 @@ export const TASKS: Task[] = [
     description: 'SSD DETAILS',
     initDate: '11-11-2019',
     slaDate: 1,
+    quickValidation: 0,
     action: ''
   },
   {
@@ -17,6 +18,7 @@ export const TASKS: Task[] = [
     description: 'SSD DETAILS',
     initDate: '20-11-2019',
     slaDate: 3,
+    quickValidation: 0,
     action: ''
   },
   {
@@ -26,6 +28,7 @@ export const TASKS: Task[] = [
     description: 'SSD DETAILS',
     initDate: '20-11-2019',
     slaDate: 4,
+    quickValidation: 0,
     action: ''
   },
   {
@@ -35,6 +38,7 @@ export const TASKS: Task[] = [
     description: 'SSD DETAILS',
     initDate: '20-11-2019',
     slaDate: 5,
+    quickValidation: 0,
     action: ''
   },
   {
@@ -44,6 +48,7 @@ export const TASKS: Task[] = [
     description: 'SSD DETAILS',
     initDate: '20-11-2019',
     slaDate: 5,
+    quickValidation: 0,
     action: ''
   },
   {
@@ -53,6 +58,7 @@ export const TASKS: Task[] = [
     description: 'SSD DETAILS',
     initDate: '20-11-2019',
     slaDate: 3,
+    quickValidation: 0,
     action: ''
   },
   {
@@ -62,6 +68,7 @@ export const TASKS: Task[] = [
     description: 'SSD DETAILS',
     initDate: '20-11-2019',
     slaDate: 8,
+    quickValidation: 0,
     action: ''
   },
   {
@@ -71,6 +78,7 @@ export const TASKS: Task[] = [
     description: 'SSD DETAILS',
     initDate: '20-11-2019',
     slaDate: 8,
+    quickValidation: 1,
     action: ''
   },
   {
@@ -80,6 +88,7 @@ export const TASKS: Task[] = [
     description: 'SSD DETAILS',
     initDate: '20-11-2019',
     slaDate: 9,
+    quickValidation: 1,
     action: ''
   },
   {
@@ -89,6 +98,7 @@ export const TASKS: Task[] = [
     description: 'SSD DETAILS',
     initDate: '20-11-2019',
     slaDate: 10,
+    quickValidation: 1,
     action: ''
   },
   {
@@ -98,6 +108,7 @@ export const TASKS: Task[] = [
     description: 'SSD DETAILS',
     initDate: '20-11-2019',
     slaDate: 5,
+    quickValidation: 1,
     action: ''
   },
   {
@@ -107,6 +118,7 @@ export const TASKS: Task[] = [
     description: 'SSD DETAILS',
     initDate: '20-11-2019',
     slaDate: 11,
+    quickValidation: 1,
     action: ''
   },
   {
@@ -116,6 +128,7 @@ export const TASKS: Task[] = [
     description: 'SSD DETAILS',
     initDate: '20-11-2019',
     slaDate: 9,
+    quickValidation: 1,
     action: ''
   }
 ];

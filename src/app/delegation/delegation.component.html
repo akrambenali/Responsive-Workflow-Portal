@@ -57,7 +57,7 @@
                         <span></span>
                     </button>
                 <div class="col">
-                    <div class="float-right"><button class="btn" routerLink="/delegation"><i class="material-icons ">people_outline</i>{{ 'MENU.DELEGATE' | translate }}</button></div>
+                    <div class="float-right"><button class="btn"><i class="material-icons ">people_outline</i>{{ 'MENU.DELEGATE' | translate }}</button></div>
                 </div>
                 <!--    <div>
                     <h2>{{ 'HOME.TITLE' | translate }}</h2>
@@ -70,6 +70,41 @@
 
             </div>
         </nav>
-        <app-home-cards></app-home-cards>
-        <app-tasklist-in-progress></app-tasklist-in-progress>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="inputEmail4">{{ 'DELEGATION.NAME' | translate }}</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="{{ 'DELEGATION.NAME' | translate }}">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputEmail5">{{ 'DELEGATION.FROM' | translate }} </label>
+                    <div class="input-group">
+                        <input class="form-control" id="inputEmail5" placeholder="yyyy-mm-dd" name="dp" [(ngModel)]="model1" ngbDatepicker #d="ngbDatepicker">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary calendar" (click)="d.toggle()" type="button"><i class="material-icons">today</i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputEmail6">{{ 'DELEGATION.TO' | translate }}</label>
+                    <div class="input-group">
+                        <input class="form-control" id="inputEmail6" placeholder="yyyy-mm-dd" name="da" [(ngModel)]="model2" ngbDatepicker #a="ngbDatepicker">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary calendar" (click)="a.toggle()" type="button"><i class="material-icons">today</i></button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg btn-block">{{ 'DELEGATION.SUBMIT' | translate }}</button>
+            <hr/>
+            <pre>Model: {{ model1 | json }}</pre>
+            <pre>Model: {{ model2 | json }}</pre>
+        </form>
+
+
+
+
     </div>
