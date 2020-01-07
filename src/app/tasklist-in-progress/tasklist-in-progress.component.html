@@ -8,9 +8,24 @@
         {{ 'TASKSLIST.SEARCH' | translate }} <input class="form-control ml-2" type="text" name="searchTerm" [(ngModel)]="service.searchTerm" />
         <span class="ml-3" *ngIf="service.loading$ | async">{{ 'TASKSLIST.LOADING' | translate }}</span>
         <div class="col">
-            <div class="float-right"><span>{{ 'TASKSLIST.FILTER' | translate }}<i class="material-icons ">filter_list</i></span></div>
+            <ng-template #popContent>
+                <div class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" id="defaultUnchecked1" name="defaultExampleRadios" value="1">
+                    <label class="custom-control-label" for="defaultUnchecked1"> {{ 'TASKSLIST.FILTER1' | translate }}</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" id="defaultUnchecked2" name="defaultExampleRadios" value="2">
+                    <label class="custom-control-label" for="defaultUnchecked2"> {{ 'TASKSLIST.FILTER2' | translate }}</label>
+                </div>
+                <div class="float-right  mr-4 mb-1 mt-1">
+                    <button type="button" class="btn btn-primary" (click)="p.close()">
+                            {{ 'TASKSLIST.FILTERBTN' | translate }}
+                 </button>
+                </div>
+            </ng-template>
+            <div class="float-right">
+                <button type="button" class="btn btn-outline-secondary mr-2" [ngbPopover]="popContent" placement="left" [autoClose]="false" triggers="manual" #p="ngbPopover" (click)="p.open()" popoverTitle="{{ 'TASKSLIST.POPUPTITLE' | translate }}">{{ 'TASKSLIST.FILTER' | translate }}<i class="material-icons ">filter_list</i></button></div>
         </div>
-
     </div>
 
 

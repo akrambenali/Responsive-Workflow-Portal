@@ -54,7 +54,8 @@ export class TaskService {
   private _tasks$ = new BehaviorSubject<Task[]>([]);
   // tslint:disable-next-line:variable-name
   private _total$ = new BehaviorSubject<number>(0);
-
+  // tslint:disable-next-line:variable-name
+  private _Alltasks$ = new BehaviorSubject<Task[]>([]);
   // tslint:disable-next-line:variable-name
   private _state: State = {
     page: 1,
@@ -80,6 +81,7 @@ export class TaskService {
   }
 
   get tasks$() { return this._tasks$.asObservable(); }
+  get Alltasks$() { return this._Alltasks$.asObservable();}
   get total$() { return this._total$.asObservable(); }
   get loading$() { return this._loading$.asObservable(); }
   get page() { return this._state.page; }

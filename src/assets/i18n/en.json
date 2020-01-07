@@ -38,7 +38,11 @@
         "VALIDATE": "Validate",
         "REJECT": "Reject ",
         "DETAILS": "Details",
-        "FILTER": "Filter by"
+        "FILTER": "Filter by",
+        "FILTERBTN": "Filter",
+        "FILTER1": "Quick Validation",
+        "FILTER2": "ALL",
+        "POPUPTITLE": "Select a Filter"
     },
     "DELEGATION": {
         "SUBMIT": "Submit",

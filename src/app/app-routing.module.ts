@@ -6,6 +6,7 @@ import { NewRequestComponent } from './new-request/new-request.component';
 import { ProcessListComponent } from './process-list/process-list.component';
 import { MyRequestDoneComponent } from './my-request-done/my-request-done.component';
 import { DelegationComponent } from './delegation/delegation.component';
+import { MytodoComponent } from './mytodo/mytodo.component';
 
 const routes: Routes = [
 
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'processlist/:category', component: ProcessListComponent },
   { path: 'myrequestdone', component: MyRequestDoneComponent},
   { path: 'delegation', component: DelegationComponent },
+  { path: 'mytodo', component: MytodoComponent},
   { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
 
