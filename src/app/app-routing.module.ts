@@ -5,8 +5,9 @@ import { LoginComponent } from './login/login.component';
 import { NewRequestComponent } from './new-request/new-request.component';
 import { ProcessListComponent } from './process-list/process-list.component';
 import { MyRequestDoneComponent } from './my-request-done/my-request-done.component';
-import { DelegationComponent } from './delegation/delegation.component';
+import { SettingsComponent } from './settings/settings.component';
 import { MytodoComponent } from './mytodo/mytodo.component';
+import { FormGeneratorComponent } from './form-generator/form-generator.component';
 
 const routes: Routes = [
 
@@ -16,8 +17,9 @@ const routes: Routes = [
   { path: 'processlist', component: ProcessListComponent},
   { path: 'processlist/:category', component: ProcessListComponent },
   { path: 'myrequestdone', component: MyRequestDoneComponent},
-  { path: 'delegation', component: DelegationComponent },
+  { path: 'delegation', component: SettingsComponent },
   { path: 'mytodo', component: MytodoComponent},
+  { path: 'forms', component: FormGeneratorComponent},
   { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
 

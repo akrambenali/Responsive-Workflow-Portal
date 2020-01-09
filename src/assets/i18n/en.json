@@ -10,7 +10,8 @@
         "REPORTS": "Reports",
         "HOME-LANG": "languages",
         "LOGOUT": "LogOut",
-        "DELEGATE": "Delegation"
+        "SETTINGS": "Settings"
+
 
     },
     "HOME": {
@@ -48,6 +49,7 @@
         "SUBMIT": "Submit",
         "NAME": "Name",
         "FROM": "From",
-        "TO": "To"
+        "TO": "To",
+        "DELEGATE": "Delegation"
     }
 }

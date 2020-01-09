@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DelegationComponent } from './delegation.component';
+import { FormGeneratorComponent } from './form-generator.component';
 
-describe('DelegationComponent', () => {
-  let component: DelegationComponent;
-  let fixture: ComponentFixture<DelegationComponent>;
+describe('FormGeneratorComponent', () => {
+  let component: FormGeneratorComponent;
+  let fixture: ComponentFixture<FormGeneratorComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DelegationComponent ]
+      declarations: [ FormGeneratorComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DelegationComponent);
+    fixture = TestBed.createComponent(FormGeneratorComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

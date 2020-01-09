@@ -10,7 +10,8 @@
         "REPORTS": "Rapports",
         "HOME-LANG": "langues",
         "LOGOUT": "Se déconnecter",
-        "DELEGATE": "Délégation"
+        "SETTINGS": "Parametres"
+
 
     },
     "HOME": {
@@ -49,6 +50,7 @@
         "SUBMIT": "Soumettre",
         "NAME": "Nom",
         "FROM": "De",
-        "TO": "A"
+        "TO": "A",
+        "DELEGATE": "Délégation"
     }
 }

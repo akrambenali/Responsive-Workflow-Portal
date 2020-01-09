@@ -56,7 +56,9 @@
                         <span></span>
                         <span></span>
                     </button>
-
+                <div class="col">
+                    <div class="float-right"><button class="btn" routerLink="/delegation"><i class="material-icons">settings_applications</i>{{ 'MENU.SETTINGS' | translate }}</button></div>
+                </div>
                 <!--    <div>
                     <h2>{{ 'HOME.TITLE' | translate }}</h2>
                     <label>{{ 'HOME.SELECT' | translate }}
@@ -80,21 +82,21 @@
                 </div>
             </div> -->
             <div class="col-xl col-md-12 col-lg-12 col-sm-6 pb-3" *ngFor="let process of processCategory">
-                <div class="card  h-100">
+                <div class="card  h-100" routerLink="/forms">
                     <!-- -->
                     <div class="row h-100 no-gutters">
                         <div class="col-6 p-3">
-                            <h5>{{process.title}}</h5>
-                            <h2>{{process.subtitle}}</h2>
+                            <h3>{{process.title}}</h3>
+                            <h5>{{process.subtitle}}</h5>
+                            <!--  <button type="button" class="btn btn-primary">Primary</button> -->
                         </div>
                         <div class="col bg-inverse text-white d-flex">
                             <h1 class="mx-auto align-self-center">
-                                <i class="material-icons grey icon-size">assessment</i>
+                                <i class="material-icons dark-purple icon-size">assessment</i>
                             </h1>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>

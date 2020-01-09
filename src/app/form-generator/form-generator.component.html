@@ -19,7 +19,7 @@
                 <a href="#"><i class="material-icons">list</i>{{ 'MENU.REQUEST-INPROGRESS' | translate }}</a>
             </li>
             <li routerLinkActive="active">
-                <a routerLink="/myrequestdone" routerLinkActive="router-link-active"><i class="material-icons">done</i>{{ 'MENU.REQUEST-DONE' | translate }}</a>
+                <a routerLink="/myrequestdone"><i class="material-icons">done</i>{{ 'MENU.REQUEST-DONE' | translate }}</a>
             </li>
             <li routerLinkActive="active">
                 <a href="#"><i class="material-icons">assignment</i>{{ 'MENU.MYTODO' | translate }}</a>
@@ -42,7 +42,7 @@
         <ul class="list-unstyled CTAs">
 
             <li>
-                <a class="article" routerLink="/login"><i class="material-icons">exit_to_app</i>{{ 'MENU.LOGOUT' | translate }}</a>
+                <a class="article"><i class="material-icons">exit_to_app</i>{{ 'MENU.LOGOUT' | translate }}</a>
             </li>
         </ul>
     </nav>
@@ -57,8 +57,9 @@
                         <span></span>
                     </button>
                 <div class="col">
-                    <div class="float-right"><button class="btn"><i class="material-icons ">people_outline</i>{{ 'MENU.DELEGATE' | translate }}</button></div>
+                    <div class="float-right"><button class="btn" routerLink="/delegation"><i class="material-icons">settings_applications</i>{{ 'MENU.SETTINGS' | translate }}</button></div>
                 </div>
+
                 <!--    <div>
                     <h2>{{ 'HOME.TITLE' | translate }}</h2>
                     <label>{{ 'HOME.SELECT' | translate }}
@@ -72,39 +73,52 @@
         </nav>
         <form>
             <div class="form-row">
-                <div class="form-group col-md-4">
-                    <label for="inputEmail4">{{ 'DELEGATION.NAME' | translate }}</label>
-                    <input type="email" class="form-control" id="inputEmail4" placeholder="{{ 'DELEGATION.NAME' | translate }}">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
                 </div>
-                <div class="form-group col-md-4">
-                    <label for="inputEmail5">{{ 'DELEGATION.FROM' | translate }} </label>
-                    <div class="input-group">
-                        <input class="form-control" id="inputEmail5" placeholder="yyyy-mm-dd" name="dp" [(ngModel)]="model1" ngbDatepicker #d="ngbDatepicker">
-                        <div class="input-group-append">
-                            <button class="btn btn-outline-secondary calendar" (click)="d.toggle()" type="button"><i class="material-icons">today</i></button>
-                        </div>
-                    </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPassword4">Password</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
                 </div>
-                <div class="form-group col-md-4">
-                    <label for="inputEmail6">{{ 'DELEGATION.TO' | translate }}</label>
-                    <div class="input-group">
-                        <input class="form-control" id="inputEmail6" placeholder="yyyy-mm-dd" name="da" [(ngModel)]="model2" ngbDatepicker #a="ngbDatepicker">
-                        <div class="input-group-append">
-                            <button class="btn btn-outline-secondary calendar" (click)="a.toggle()" type="button"><i class="material-icons">today</i></button>
-                        </div>
-                    </div>
-                </div>
-
-
             </div>
-
-            <button type="submit" class="btn btn-primary btn-lg btn-block">{{ 'DELEGATION.SUBMIT' | translate }}</button>
-            <hr/>
-            <pre>Model: {{ model1 | json }}</pre>
-            <pre>Model: {{ model2 | json }}</pre>
+            <div class="form-group">
+                <label for="inputAddress">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="form-group">
+                <label for="inputAddress2">Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputCity">City</label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputState">State</label>
+                    <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>...</option>
+      </select>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="inputZip">Zip</label>
+                    <input type="text" class="form-control" id="inputZip">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+        Check me out
+      </label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign in</button>
         </form>
 
 
-
-
     </div>
+
+</div>
