@@ -1,0 +1,85 @@
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+    table {
+        width: 100%;
+    }
+    /* Force table to not be like tables anymore */
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    tr {
+        border: 1px solid #ccc;
+    }
+    td {
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+    td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        /* Label the data */
+        content: attr(data-column);
+        // color: #000;
+        color: #43425D;
+        opacity: 0.5;
+        font-weight: bold;
+    }
+}
+
+.margin-button {
+    margin: 0.5rem;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #ff6565 !important;
+    border-color: #ff6565 !important;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #3b86ff !important;
+    //#28a745
+    border-color: #3b86ff !important;
+}
+
+.blue {
+    color: #3b86ff;
+}
+
+.red {
+    color: #ff6565;
+}
+
+.grey {
+    color: #43425D;
+    opacity: 0.5;
+}
+
+.green {
+    color: #5EE2A0;
+}
+
+.grey-color {
+    color: #43425D;
+}

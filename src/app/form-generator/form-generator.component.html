@@ -42,7 +42,7 @@
         <ul class="list-unstyled CTAs">
 
             <li>
-                <a class="article"><i class="material-icons">exit_to_app</i>{{ 'MENU.LOGOUT' | translate }}</a>
+                <a class="article" routerLink="/login"><i class="material-icons">exit_to_app</i>{{ 'MENU.LOGOUT' | translate }}</a>
             </li>
         </ul>
     </nav>
@@ -71,54 +71,164 @@
 
             </div>
         </nav>
-        <form>
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label for="inputEmail4">Email</label>
-                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="inputPassword4">Password</label>
-                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="inputAddress">Address</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-            </div>
-            <div class="form-group">
-                <label for="inputAddress2">Address 2</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-            </div>
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label for="inputCity">City</label>
-                    <input type="text" class="form-control" id="inputCity">
-                </div>
-                <div class="form-group col-md-4">
-                    <label for="inputState">State</label>
-                    <select id="inputState" class="form-control">
-        <option selected>Choose...</option>
-        <option>...</option>
-      </select>
-                </div>
-                <div class="form-group col-md-2">
-                    <label for="inputZip">Zip</label>
-                    <input type="text" class="form-control" id="inputZip">
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
-        Check me out
-      </label>
-                </div>
-            </div>
-            <button type="submit" class="btn btn-primary">Sign in</button>
-        </form>
+
+        <ngb-tabset #t="ngbTabset">
+            <ngb-tab id="tab-selectbyid1" title="{{ 'FORMS.TITLE1' | translate }}">
+                <ng-template ngbTabContent>
+                    <form>
+                        <div class="form-row">
+
+                            <div class="form-group col-md-4">
+                                <label for="inputEmail4">{{ 'FORMS.ID' | translate }}</label>
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="40000">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputPassword4">{{ 'FORMS.NAME' | translate }}</label>
+                                <input type="password" class="form-control" id="inputPassword4" placeholder=" Hakim ">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputAddress">{{ 'FORMS.PHONE' | translate }}</label>
+                                <input type="text" class="form-control" id="inputAddress" placeholder="0770090909">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputAddress">{{ 'FORMS.JOBTITLE' | translate }}</label>
+                                <input type="text" class="form-control" id="inputAddress" placeholder="Manager">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputAddress2">{{ 'FORMS.DIRECTION' | translate }}</label>
+                                <input type="text" class="form-control" id="inputAddress2" placeholder="Marketing">
+                            </div>
+                        </div>
+                        <p>
+                            <button class="btn btn-outline-primary" (click)="t.select('tab-selectbyid2')">{{ 'FORMS.NEXT' | translate }}</button>
+                        </p>
+                    </form>
+                </ng-template>
+            </ngb-tab>
+            <ngb-tab id="tab-selectbyid2">
+                <ng-template ngbTabTitle>{{ 'FORMS.TITLE2' | translate }}</ng-template>
+                <ng-template ngbTabContent>
+                    <form>
+                        <div class="form-row">
+
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword4">{{ 'FORMS.NAME' | translate }}</label>
+                                <input type="password" class="form-control" id="inputPassword4" placeholder="Rachid">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputAddress">{{ 'FORMS.JOBTITLE' | translate }}</label>
+                                <input type="text" class="form-control" id="inputAddress" placeholder="Director">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="formGroupExampleInput">{{ 'FORMS.TYPE' | translate }}</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">{{ 'FORMS.EMPLOYEE' | translate }}</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                    <label class="form-check-label" for="exampleRadios2">{{ 'FORMS.EXPATRIATE' | translate }}</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                                    <label class="form-check-label" for="exampleRadios3"> {{ 'FORMS.CONSULTANT' | translate }}</label>
+                                </div>
+                            </div>
+                        </div>
+                        <p>
+                            <button class="btn btn-outline-primary" (click)="t.select('tab-selectbyid3')">{{'FORMS.NEXT' | translate }}</button>
+                        </p>
+                    </form>
+                </ng-template>
+            </ngb-tab>
+
+            <ngb-tab id="tab-selectbyid3">
+                <ng-template ngbTabTitle>{{ 'FORMS.TITLE3' | translate }} </ng-template>
+                <ng-template ngbTabContent>
+                    <form>
+                        <div class="form-row">
+
+                            <div class="form-group col-md-4">
+                                <label for="inputState">{{ 'FORMS.APPNAME' | translate }}</label>
+                                <select id="inputState" class="form-control">
+                                   <option [value]="app" *ngFor="let app of applications">{{app}}</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="formGroupExampleInput">{{ 'FORMS.ACTIONTITLE' | translate }}</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">{{ 'FORMS.ACTION1' | translate }}</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                    <label class="form-check-label" for="exampleRadios2">{{ 'FORMS.ACTION2' | translate }}</label>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="formGroupExampleInput">{{ 'FORMS.ACCESDURATION' | translate }}</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">{{ 'FORMS.DURATION1' | translate }}</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                    <label class="form-check-label" for="exampleRadios2">{{ 'FORMS.DURATION2' | translate }}</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="exampleFormControlTextarea1">{{ 'FORMS.DESCRIPTION' | translate }}</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+
+                        </div>
+                        <p>
+                            <button class="btn btn-outline-primary" (click)="t.select('tab-selectbyid4')">{{'FORMS.NEXT' | translate }}</button>
+                        </p>
+                    </form>
+                </ng-template>
+            </ngb-tab>
+            <ngb-tab id="tab-selectbyid4">
+                <ng-template ngbTabTitle>{{ 'FORMS.TITLE4' | translate }}</ng-template>
+                <ng-template ngbTabContent>
+                    <form>
+                        <div class="form-row">
+
+                            <div class="form-group col-md-12">
+                                <label for="inputEmail4">{{ 'FORMS.TERMESUBTITLE1' | translate }}</label>
+                                <p>{{ 'FORMS.TERMETEXT1A' | translate }}<br>{{ 'FORMS.TERMETEXT1B' | translate }}<br>{{ 'FORMS.TERMETEXT1C' | translate }}</p>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label for="inputPassword4">{{ 'FORMS.TERMESUBTITLE2' | translate }}</label>
+                                <p>{{ 'FORMS.TERMETEXT2A' | translate }} <br> {{ 'FORMS.TERMETEXT2B' | translate }} </p>
+                            </div>
+
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">{{ 'FORMS.ACCPETED' | translate }} </label>
+                                </div>
+                            </div>
+
+                        </div>
+                        <p>
+                            <button type="submit" class="btn btn-primary">{{ 'FORMS.SUBMIT' | translate }} </button>
+                        </p>
+                    </form>
+                </ng-template>
+            </ngb-tab>
+
+        </ngb-tabset>
 
 
     </div>
+
+
 
 </div>

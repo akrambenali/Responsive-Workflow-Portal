@@ -1,5 +1,5 @@
 <h4 class="dark-purple title-card">
-    {{ 'MENU.REQUEST-DONE' | translate }}</h4>
+    {{ 'MENU.REQUEST-INPROGRESS' | translate }}</h4>
 
 
 
@@ -7,7 +7,27 @@
     <div class="form-group form-inline">
         {{ 'TASKSLIST.SEARCH' | translate }} <input class="form-control ml-2" type="text" name="searchTerm" [(ngModel)]="service.searchTerm" />
         <span class="ml-3" *ngIf="service.loading$ | async">{{ 'TASKSLIST.LOADING' | translate }}</span>
+        <div class="col">
+            <ng-template #popContent>
+                <div class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" id="defaultUnchecked1" name="defaultExampleRadios" value="1">
+                    <label class="custom-control-label" for="defaultUnchecked1"> {{ 'TASKSLIST.FILTER1' | translate }}</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" id="defaultUnchecked2" name="defaultExampleRadios" value="2">
+                    <label class="custom-control-label" for="defaultUnchecked2"> {{ 'TASKSLIST.FILTER2' | translate }}</label>
+                </div>
+                <div class="float-right  mr-4 mb-1 mt-1">
+                    <button type="button" class="btn btn-primary" (click)="p.close()">
+                            {{ 'TASKSLIST.FILTERBTN' | translate }}
+                 </button>
+                </div>
+            </ng-template>
+            <div class="float-right">
+                <button type="button" class="btn btn-outline-secondary mr-2" [ngbPopover]="popContent" placement="left" [autoClose]="false" triggers="manual" #p="ngbPopover" (click)="p.open()" popoverTitle="{{ 'TASKSLIST.POPUPTITLE' | translate }}">{{ 'TASKSLIST.FILTER' | translate }}<i class="material-icons ">filter_list</i></button></div>
+        </div>
     </div>
+
 
     <table class="table table-light">
         <thead>
@@ -42,9 +62,9 @@
                 <td attr.data-column="{{ 'TASKSLIST.ACTION' | translate }}">
                     <ngb-highlight [result]="task.action "></ngb-highlight>
                     <!--  <button type="button " class="btn btn-primary "><i class="material-icons ">remove_red_eye</i></button> -->
-                    <button type="button " class="btn blue"><i class="material-icons ">check_circle</i></button>
-                    <button type="button " class="btn red"><i class="material-icons ">delete_forever</i></button>
-                    <button type="button " class="btn grey"><i class="material-icons ">add_box</i></button>
+                    <button type="button " class="btn green"><i class="material-icons ">check_circle</i>{{ 'TASKSLIST.VALIDATE' | translate }}</button>
+                    <button type="button " class="btn red"><i class="material-icons ">clear</i>{{ 'TASKSLIST.REJECT' | translate }}</button>
+                    <button type="button " class="btn grey-color"><i class="material-icons ">add_box</i>{{ 'TASKSLIST.DETAILS' | translate }}</button>
                 </td>
             </tr>
         </tbody>

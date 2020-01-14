@@ -27,7 +27,7 @@ export class NewRequestComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.httpService.get('./assets/ParentCards.json').subscribe(
+    this.httpService.get('assets/ParentCards.json').subscribe(
       data => {
         this.processCategory = data as string[];	 // FILL THE ARRAY WITH DATA.
         console.log(this.processCategory[1]);

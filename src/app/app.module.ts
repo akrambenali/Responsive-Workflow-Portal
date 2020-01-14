@@ -24,11 +24,15 @@ import { TasklistInDoneComponent} from './tasklist-in-done/tasklist-in-done.comp
 import { SettingsComponent } from './settings/settings.component';
 import { MytodoComponent } from './mytodo/mytodo.component';
 import { FormGeneratorComponent } from './form-generator/form-generator.component';
+import { MyRequestPendingComponent } from './my-request-pending/my-request-pending.component';
+import { TasklistInPendingComponent } from './tasklist-pending/tasklist-in-pending.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
-  return new TranslateHttpLoader(httpClient);
+
+  return new TranslateHttpLoader(httpClient, './assets/i18n/', '.json');
 }
+
 
 
 
@@ -47,7 +51,9 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     TasklistInDoneComponent,
     SettingsComponent,
     MytodoComponent,
-    FormGeneratorComponent
+    FormGeneratorComponent,
+    MyRequestPendingComponent,
+    TasklistInPendingComponent
 
   ],
   imports: [

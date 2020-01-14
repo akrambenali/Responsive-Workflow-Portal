@@ -51,5 +51,41 @@
         "FROM": "From",
         "TO": "To",
         "DELEGATE": "Delegation"
+    },
+    "FORMS": {
+        "ID": "Employee id",
+        "NAME": "Name",
+        "PHONE": "Phone number",
+        "EMAIL": "Email",
+        "JOBTITLE": " Job Title",
+        "DIRECTION": "Direction / Department",
+        "TITLE1": "Information of the requesting user",
+        "TITLE2": "Direct Manager",
+        "TITLE3": "Request details",
+        "TITLE4": "Terms and Condition",
+        "NEXT": "Next",
+        "TYPE": "Type",
+        "EMPLOYEE": "Employee",
+        "EXPATRIATE": "Expatriate",
+        "CONSULTANT": "Consultant",
+        "APPNAME": "Application Name",
+        "ACTIONTITLE": "Action Requested",
+        "ACTION1": "New user account",
+        "ACTION2": "User account update",
+        "DESCRIPTION": "Description of access / Privilege requested",
+        "ACCESDURATION": "Duration of access",
+        "DURATION1": "Permanent",
+        "DURATION2": "Temporary",
+        "TERMESUBTITLE1": "System Access Terms & Conditions",
+        "TERMESUBTITLE2": "Requirement to process your request",
+        "TERMETEXT1A": "- The Applicant is responsible for any action taken with his account.",
+        "TERMETEXT1B": "- The Claimant agrees not to disclose his password or to share his account with anyone, even temporarily.",
+        "TERMETEXT1C": "- The Applicant agrees to use the privileges which are allocated to him only within the framework of his tasks.",
+        "TERMETEXT2A": "- The Applicant is required to fill in all the fields, otherwise the request will be returned ",
+        "TERMETEXT2B": "- The Applicant is required to send the duly completed form to the IT Service desk",
+        "ACCPETED": "read and accepted *",
+        "SUBMIT": "Submit"
+
+
     }
 }

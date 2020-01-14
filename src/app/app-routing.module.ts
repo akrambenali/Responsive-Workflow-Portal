@@ -8,6 +8,7 @@ import { MyRequestDoneComponent } from './my-request-done/my-request-done.compon
 import { SettingsComponent } from './settings/settings.component';
 import { MytodoComponent } from './mytodo/mytodo.component';
 import { FormGeneratorComponent } from './form-generator/form-generator.component';
+import { MyRequestPendingComponent } from './my-request-pending/my-request-pending.component';
 
 const routes: Routes = [
 
@@ -20,7 +21,8 @@ const routes: Routes = [
   { path: 'delegation', component: SettingsComponent },
   { path: 'mytodo', component: MytodoComponent},
   { path: 'forms', component: FormGeneratorComponent},
-  { path: '', redirectTo: '/home', pathMatch: 'full' }
+  { path: 'myrequest', component: MyRequestPendingComponent},
+  { path: '', redirectTo: '/login', pathMatch: 'full' }
 ];
 
 @NgModule({
