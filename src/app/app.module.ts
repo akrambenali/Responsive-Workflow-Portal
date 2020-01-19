@@ -26,6 +26,8 @@ import { MytodoComponent } from './mytodo/mytodo.component';
 import { FormGeneratorComponent } from './form-generator/form-generator.component';
 import { MyRequestPendingComponent } from './my-request-pending/my-request-pending.component';
 import { TasklistInPendingComponent } from './tasklist-pending/tasklist-in-pending.component';
+import { FormDetailComponent } from './form-detail/form-detail.component';
+import { FormValidationComponent } from './form-validation/form-validation.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -53,7 +55,9 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     MytodoComponent,
     FormGeneratorComponent,
     MyRequestPendingComponent,
-    TasklistInPendingComponent
+    TasklistInPendingComponent,
+    FormDetailComponent,
+    FormValidationComponent
 
   ],
   imports: [

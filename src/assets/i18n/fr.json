@@ -43,7 +43,8 @@
         "FILTERBTN": "Filtrer",
         "FILTER1": "Validation Rapide",
         "FILTER2": "Toutes les valeurs",
-        "POPUPTITLE": "Sélectionner un filtre"
+        "POPUPTITLE": "Sélectionner un filtre",
+        "CANCEL": "Annuler"
 
     },
     "DELEGATION": {
@@ -85,7 +86,9 @@
         "TERMETEXT2A": "- Le Demandeur est tenu de renseigner tout les champs, faute de quoi la demande sera retournée",
         "TERMETEXT2B": "- Le Demandeur est tenu d'envoyer le formulaire dûment rempli à l’IT Service desk",
         "ACCPETED": "lu et accepté *",
-        "SUBMIT": "Soumettre"
+        "SUBMIT": "Soumettre",
+        "VALIDATE": "Valider",
+        "REJECT": "Rejeter"
 
     }
 }

@@ -62,9 +62,8 @@
                 <td attr.data-column="{{ 'TASKSLIST.ACTION' | translate }}">
                     <ngb-highlight [result]="task.action "></ngb-highlight>
                     <!--  <button type="button " class="btn btn-primary "><i class="material-icons ">remove_red_eye</i></button> -->
-                    <button type="button " class="btn green"><i class="material-icons ">check_circle</i>{{ 'TASKSLIST.VALIDATE' | translate }}</button>
-                    <button type="button " class="btn red"><i class="material-icons ">clear</i>{{ 'TASKSLIST.REJECT' | translate }}</button>
-                    <button type="button " class="btn grey-color"><i class="material-icons ">add_box</i>{{ 'TASKSLIST.DETAILS' | translate }}</button>
+                    <button type="button " class="btn red"><i class="material-icons ">clear</i>{{ 'TASKSLIST.CANCEL' | translate }}</button>
+                    <button type="button" routerLink="/formdetail" class="btn grey-color"><i class="material-icons ">add_box</i>{{ 'TASKSLIST.DETAILS' | translate }}</button>
                 </td>
             </tr>
         </tbody>

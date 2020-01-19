@@ -27,6 +27,9 @@
             <li routerLinkActive="active">
                 <a href="#"><i class="material-icons">assessment</i>{{ 'MENU.REPORTS' | translate }}</a>
             </li>
+            <li routerLinkActive="active">
+                <a routerLink="/delegation"><i class="material-icons">settings_applications</i>{{ 'MENU.SETTINGS' | translate }}</a>
+            </li>
             <li>
                 <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="material-icons">language</i> {{ 'MENU.HOME-LANG' | translate }}</a>
                 <ul class="collapse list-unstyled" id="pageSubmenu">
@@ -57,7 +60,7 @@
                         <span></span>
                     </button>
                 <div class="col">
-                    <div class="float-right"><button class="btn" routerLink="/delegation"><i class="material-icons">settings_applications</i>{{ 'MENU.SETTINGS' | translate }}</button></div>
+                    <div class="float-right"><button class="btn" routerLink="/delegation"><i class="material-icons">settings_applications</i></button></div>
                 </div>
                 <!--    <div>
                     <h2>{{ 'HOME.TITLE' | translate }}</h2>

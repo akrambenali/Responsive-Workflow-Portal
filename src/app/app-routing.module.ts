@@ -9,6 +9,8 @@ import { SettingsComponent } from './settings/settings.component';
 import { MytodoComponent } from './mytodo/mytodo.component';
 import { FormGeneratorComponent } from './form-generator/form-generator.component';
 import { MyRequestPendingComponent } from './my-request-pending/my-request-pending.component';
+import { FormDetailComponent } from './form-detail/form-detail.component';
+import { FormValidationComponent } from './form-validation/form-validation.component';
 
 const routes: Routes = [
 
@@ -22,6 +24,9 @@ const routes: Routes = [
   { path: 'mytodo', component: MytodoComponent},
   { path: 'forms', component: FormGeneratorComponent},
   { path: 'myrequest', component: MyRequestPendingComponent},
+  { path: 'formdetail', component: FormDetailComponent},
+  { path: 'formvalidation' , component: FormValidationComponent},
+  { path: '**', component: HomeComponent },
   { path: '', redirectTo: '/login', pathMatch: 'full' }
 ];
 

@@ -72,6 +72,13 @@
             </div>
         </nav>
 
+        <!--  <div class="alert alert-primary alert-dismissible fade show" role="alert">
+            <strong>Hello Hakim!</strong> Your request is Waiting For <strong>Rachid</strong> Validation .
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+            </button>
+        </div> -->
+
         <ngb-tabset #t="ngbTabset">
             <ngb-tab id="tab-selectbyid1" title="{{ 'FORMS.TITLE1' | translate }}">
                 <ng-template ngbTabContent>
@@ -80,25 +87,25 @@
 
                             <div class="form-group col-md-4">
                                 <label for="inputEmail4">{{ 'FORMS.ID' | translate }}</label>
-                                <input type="email" class="form-control" id="inputEmail4" placeholder="40000">
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="40000" disabled>
                             </div>
                             <div class="form-group col-md-4">
                                 <label for="inputPassword4">{{ 'FORMS.NAME' | translate }}</label>
-                                <input type="password" class="form-control" id="inputPassword4" placeholder=" Hakim ">
+                                <input type="text" class="form-control" id="inputPassword4" placeholder=" Hakim " disabled>
                             </div>
                             <div class="form-group col-md-4">
                                 <label for="inputAddress">{{ 'FORMS.PHONE' | translate }}</label>
-                                <input type="text" class="form-control" id="inputAddress" placeholder="0770090909">
+                                <input type="text" class="form-control" id="inputAddress" placeholder="0770090909" disabled>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="inputAddress">{{ 'FORMS.JOBTITLE' | translate }}</label>
-                                <input type="text" class="form-control" id="inputAddress" placeholder="Manager">
+                                <input type="text" class="form-control" id="inputAddress" placeholder="Manager" disabled>
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="inputAddress2">{{ 'FORMS.DIRECTION' | translate }}</label>
-                                <input type="text" class="form-control" id="inputAddress2" placeholder="Marketing">
+                                <input type="text" class="form-control" id="inputAddress2" placeholder="Marketing" disabled>
                             </div>
                         </div>
                         <p>
@@ -115,24 +122,24 @@
 
                             <div class="form-group col-md-6">
                                 <label for="inputPassword4">{{ 'FORMS.NAME' | translate }}</label>
-                                <input type="text" class="form-control" id="inputPassword4" placeholder="Rachid">
+                                <input type="password" class="form-control" id="inputPassword4" placeholder="Rachid" disabled>
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="inputAddress">{{ 'FORMS.JOBTITLE' | translate }}</label>
-                                <input type="text" class="form-control" id="inputAddress" placeholder="Director">
+                                <input type="text" class="form-control" id="inputAddress" placeholder="Director" disabled>
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="formGroupExampleInput">{{ 'FORMS.TYPE' | translate }}</label>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked disabled>
                                     <label class="form-check-label" for="exampleRadios1">{{ 'FORMS.EMPLOYEE' | translate }}</label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" disabled>
                                     <label class="form-check-label" for="exampleRadios2">{{ 'FORMS.EXPATRIATE' | translate }}</label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
                                     <label class="form-check-label" for="exampleRadios3"> {{ 'FORMS.CONSULTANT' | translate }}</label>
                                 </div>
                             </div>
@@ -152,37 +159,37 @@
 
                             <div class="form-group col-md-4">
                                 <label for="inputState">{{ 'FORMS.APPNAME' | translate }}</label>
-                                <select id="inputState" class="form-control">
-                                   <option [value]="app" *ngFor="let app of applications">{{app}}</option>
+                                <select id="inputState" class="form-control" disabled>
+                                   <option> Customer Care</option>
                                 </select>
                             </div>
                             <div class="form-group col-md-4">
                                 <label for="formGroupExampleInput">{{ 'FORMS.ACTIONTITLE' | translate }}</label>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <input class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios1" value="option1" checked disabled>
                                     <label class="form-check-label" for="exampleRadios1">{{ 'FORMS.ACTION1' | translate }}</label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                    <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios2" value="option2" disabled>
                                     <label class="form-check-label" for="exampleRadios2">{{ 'FORMS.ACTION2' | translate }}</label>
                                 </div>
                             </div>
                             <div class="form-group col-md-4">
                                 <label for="formGroupExampleInput">{{ 'FORMS.ACCESDURATION' | translate }}</label>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                                    <label class="form-check-label" for="exampleRadios1">{{ 'FORMS.DURATION1' | translate }}</label>
+                                    <input class="form-check-input" type="radio" name="exampleRadios3" id="exampleRadios3" value="option1" checked disabled>
+                                    <label class="form-check-label" for="exampleRadios3">{{ 'FORMS.DURATION1' | translate }}</label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                    <label class="form-check-label" for="exampleRadios2">{{ 'FORMS.DURATION2' | translate }}</label>
+                                    <input class="form-check-input" type="radio" name="exampleRadios4" id="exampleRadios4" value="option2" disabled>
+                                    <label class="form-check-label" for="exampleRadios4">{{ 'FORMS.DURATION2' | translate }}</label>
                                 </div>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="exampleFormControlTextarea1">{{ 'FORMS.DESCRIPTION' | translate }}</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" disabled></textarea>
                             </div>
 
                         </div>
@@ -211,39 +218,26 @@
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" checked disabled>
                                     <label class="form-check-label" for="inlineCheckbox1">{{ 'FORMS.ACCPETED' | translate }} </label>
                                 </div>
                             </div>
 
                         </div>
-                        <p>
-                            <button type="submit" class="btn btn-primary" (click)="open(content)">{{ 'FORMS.SUBMIT' | translate }} </button>
-                        </p>
+
                     </form>
                 </ng-template>
             </ngb-tab>
 
         </ngb-tabset>
 
+        <p>
+            <button type="submit" class="btn btn-primary">{{ 'FORMS.VALIDATE' | translate }} </button>
+        </p>
+        <p>
+            <button type="submit" class="btn btn-danger">{{ 'FORMS.REJECT' | translate }} </button>
+        </p>
 
-        <ng-template #content let-modal>
-            <div class=" modal-header ">
-                <h4 class="modal-title " id="modal-title ">{{ 'DELEGATION.DELEGATE' | translate }}</h4>
-                <button type="button " class="close " aria-describedby="modal-title " (click)="modal.dismiss( 'Cross click') ">
-      <span aria-hidden="true ">&times;</span>
-    </button>
-            </div>
-            <div class="modal-body">
-                <p><strong>Votre requete est pris en charge <span class="text-primary ">" DARI "</span></strong></p>
-                <p>
-                    <span class="text-info">This operation can be changed.</span>
-                </p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-success btn-block" (click)="modal.close('Ok click')" routerLink="/home">Ok</button>
-            </div>
-        </ng-template>
 
 
     </div>

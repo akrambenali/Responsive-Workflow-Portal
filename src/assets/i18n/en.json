@@ -43,7 +43,8 @@
         "FILTERBTN": "Filter",
         "FILTER1": "Quick Validation",
         "FILTER2": "ALL",
-        "POPUPTITLE": "Select a Filter"
+        "POPUPTITLE": "Select a Filter",
+        "CANCEL": "Cancel"
     },
     "DELEGATION": {
         "SUBMIT": "Submit",
@@ -84,7 +85,10 @@
         "TERMETEXT2A": "- The Applicant is required to fill in all the fields, otherwise the request will be returned ",
         "TERMETEXT2B": "- The Applicant is required to send the duly completed form to the IT Service desk",
         "ACCPETED": "read and accepted *",
-        "SUBMIT": "Submit"
+        "SUBMIT": "Submit",
+        "VALIDATE": "Validate",
+        "REJECT": "Reject "
+
 
 
     }
