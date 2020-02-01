@@ -6,7 +6,7 @@ import { Task } from './task';
 import { TaskService } from './task.service';
 import { NgbdSortableHeader, SortEvent } from './sortable.directive';
 import { Console } from '@angular/core/src/console';
-
+import * as _ from 'lodash';
 
 @Component(
   {
@@ -18,19 +18,23 @@ import { Console } from '@angular/core/src/console';
 
 export class TasklistInProgressComponent {
   tasks$: Observable<Task[]>;
-  alltasks$: Observable<Task[]>;
+  alltasks$: Observable<any[]>;
   total$: Observable<number>;
+  list = [];
+  public icon = 'keyboard_arrow_up';
 
   @ViewChildren(NgbdSortableHeader) headers: QueryList<NgbdSortableHeader>;
 
   constructor(public service: TaskService) {
     this.tasks$ = service.tasks$;
-  //  console.log(this.tasks$.subscribe(val1 => console.log(val1)));
+    // this.tasks$.subscribe(val1 => console.log(val1));
     this.total$ = service.total$;
-   // console.log(this.total$.subscribe(val => console.log(val)));
-   // this.alltasks$ = this.service.Alltasks$;
-   // console.log(this.alltasks$.subscribe(val3 => console.log( 'helloe' + val3)));
+    // console.log(this.total$.subscribe(val => console.log(val)));
+    this.alltasks$ = service.Alltasks$;
+    this.alltasks$.subscribe(list => console.log(list));
+
   }
+
 
 
   onSort({ column, direction }: SortEvent) {
@@ -43,7 +47,16 @@ export class TasklistInProgressComponent {
 
     this.service.sortColumn = column;
     this.service.sortDirection = direction;
+    if (direction === 'asc') {
+      this.icon = 'keyboard_arrow_down';
+    } else {
+      this.icon = 'keyboard_arrow_up';
+    }
+
   }
+
+
+
 }
 
 

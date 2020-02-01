@@ -2,9 +2,6 @@
     DEMO STYLE
 */
 
-@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
-@import "../../../node_modules/bootstrap/scss/variables";
-@import "../../../node_modules/bootstrap/scss/mixins";
 p {
     font-size: 1.1em;
     font-weight: 300;
@@ -223,28 +220,4 @@ a.article:hover {
     #sidebarCollapse.active span:last-of-type {
         transform: rotate(-45deg) translate(1px, -1px);
     }
-}
-
-.margin-card {
-    margin: 1rem;
-}
-
-.icon-size {
-    font-size: 7rem;
-}
-
-.card-columns {
-    @include media-breakpoint-only(lg) {
-        column-count: 3 !important;
-    }
-    @include media-breakpoint-only(md) {
-        column-count: 2 !important;
-    }
-    @include media-breakpoint-only(xl) {
-        column-count: 3 !important;
-    }
-}
-
-.margin-btn {
-    margin: 1rem;
 }

@@ -10,6 +10,7 @@ import { SortDirection } from './sortable.directive';
 
 interface SearchResult {
   tasks: Task[];
+  alltasks: Task[];
   total: number;
 }
 
@@ -44,6 +45,8 @@ function matches(task: Task, term: string) {
     || task.initDate.toLowerCase().includes(term.toLowerCase());
 }
 
+
+
 @Injectable({ providedIn: 'root' })
 export class TaskService {
   // tslint:disable-next-line:variable-name
@@ -75,13 +78,14 @@ export class TaskService {
     ).subscribe(result => {
       this._tasks$.next(result.tasks);
       this._total$.next(result.total);
+      this._Alltasks$.next(result.alltasks);
     });
 
     this._search$.next();
   }
 
   get tasks$() { return this._tasks$.asObservable(); }
-  get Alltasks$() { return this._Alltasks$.asObservable();}
+  get Alltasks$() { return this._Alltasks$.asObservable(); }
   get total$() { return this._total$.asObservable(); }
   get loading$() { return this._loading$.asObservable(); }
   get page() { return this._state.page; }
@@ -107,6 +111,7 @@ export class TaskService {
 
     // 1. sort
     let tasks = sort(TASKS, sortColumn, sortDirection);
+    const alltasks = sort(TASKS, sortColumn, sortDirection);
 
     // 2. filter
     tasks = tasks.filter(country => matches(country, searchTerm));  // ,sthis.pipe
@@ -114,6 +119,8 @@ export class TaskService {
 
     // 3. paginate
     tasks = tasks.slice((page - 1) * pageSize, (page - 1) * pageSize + pageSize);
-    return of({ tasks, total });
+    return of({ tasks, total, alltasks });
+    // return of({ tasks, total });
   }
+
 }

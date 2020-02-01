@@ -16,13 +16,13 @@
 
             </li>
             <li routerLinkActive="active">
-                <a href="#"><i class="material-icons">list</i>{{ 'MENU.REQUEST-INPROGRESS' | translate }}</a>
+                <a routerLink="/myrequest"><i class="material-icons">list</i>{{ 'MENU.REQUEST-INPROGRESS' | translate }}</a>
             </li>
             <li routerLinkActive="active">
                 <a routerLink="/myrequestdone"><i class="material-icons">done</i>{{ 'MENU.REQUEST-DONE' | translate }}</a>
             </li>
             <li routerLinkActive="active">
-                <a href="#"><i class="material-icons">assignment</i>{{ 'MENU.MYTODO' | translate }}</a>
+                <a routerLink="/mytodo"><i class="material-icons">assignment</i>{{ 'MENU.MYTODO' | translate }}</a>
             </li>
             <li routerLinkActive="active">
                 <a href="#"><i class="material-icons">assessment</i>{{ 'MENU.REPORTS' | translate }}</a>
@@ -57,7 +57,7 @@
                         <span></span>
                     </button>
                 <div class="col">
-                    <div class="float-right"><button class="btn" routerLink="/delegation"><i class="material-icons">settings_applications</i>{{ 'MENU.SETTINGS' | translate }}</button></div>
+                    <div class="float-right"><button class="btn" routerLink="/delegation"><i class="material-icons">settings_applications</i></button></div>
                 </div>
 
                 <!--    <div>
@@ -231,13 +231,69 @@
 
         </ngb-tabset>
 
-        <p>
-            <button type="submit" class="btn btn-primary">{{ 'FORMS.VALIDATE' | translate }} </button>
-        </p>
-        <p>
-            <button type="submit" class="btn btn-danger">{{ 'FORMS.REJECT' | translate }} </button>
-        </p>
+        <div>
+            <button type="button" class="btn  btn-outline-success margin-btn" (click)="open(content1)">{{ 'FORMS.VALIDATE' | translate }}</button>
+            <button type="button" class="btn  btn-outline-warning margin-btn" (click)="open(content2)">{{ 'FORMS.REVIEW' | translate }}</button>
+            <button type=" button " class="btn btn-outline-danger margin-btn " (click)="open(content3)">{{ 'FORMS.REJECT' | translate }}</button>
+        </div>
 
+        <ng-template #content1 let-modal>
+            <div class=" modal-header ">
+                <h4 class="modal-title " id="modal-title ">{{ 'DELEGATION.DELEGATE' | translate }}</h4>
+                <button type="button " class="close " aria-describedby="modal-title " (click)="modal.dismiss( 'Cross click') ">
+      <span aria-hidden="true ">&times;</span>
+    </button>
+            </div>
+            <div class="modal-body ">
+                <p><strong>{{ 'FORMS.VALIDATIONMSG' | translate }}</strong></p>
+
+            </div>
+            <div class="modal-footer ">
+                <button type="button " class="btn  btn-outline-primary margin-btn " (click)="modal.dismiss( 'Cross click')">{{ 'FORMS.CANCEL' | translate }}</button>
+                <button type=" button " class="btn btn-success margin-btn " (click)="modal.close( 'Ok click') " routerLink="/home ">{{ 'FORMS.VALIDATE' | translate }}</button>
+            </div>
+        </ng-template>
+
+        <ng-template #content2 let-modal>
+            <div class=" modal-header ">
+                <h4 class="modal-title " id="modal-title ">{{ 'DELEGATION.DELEGATE' | translate }}</h4>
+                <button type="button " class="close " aria-describedby="modal-title " (click)="modal.dismiss( 'Cross click') ">
+      <span aria-hidden="true ">&times;</span>
+    </button>
+            </div>
+            <div class="modal-body ">
+                <p><strong>{{ 'FORMS.REVIEWMSG' | translate }}</strong></p>
+                <div class="form-group col-md-12">
+                    <label for="exampleFormControlTextarea1">{{ 'FORMS.COMENT' | translate }} * </label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer ">
+                <button type="button " class="btn  btn-outline-primary margin-btn " (click)="modal.dismiss( 'Cross click')">{{ 'FORMS.CANCEL' | translate }}</button>
+                <button type=" button " class="btn btn-success margin-btn " (click)="modal.close( 'Ok click') " routerLink="/home ">{{ 'FORMS.VALIDATE' | translate }}</button>
+            </div>
+        </ng-template>
+
+
+        <ng-template #content3 let-modal>
+            <div class=" modal-header ">
+                <h4 class="modal-title " id="modal-title ">{{ 'DELEGATION.DELEGATE' | translate }}</h4>
+                <button type="button " class="close " aria-describedby="modal-title " (click)="modal.dismiss( 'Cross click') ">
+      <span aria-hidden="true ">&times;</span>
+    </button>
+            </div>
+            <div class="modal-body ">
+                <p><strong>{{ 'FORMS.REJECTMSG' | translate }}</strong></p>
+                <div class="form-group col-md-12">
+                    <label for="exampleFormControlTextarea1">{{ 'FORMS.COMENT' | translate }} * </label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer ">
+                <button type="button " class="btn  btn-outline-primary margin-btn " (click)="modal.dismiss( 'Cross click')">{{ 'FORMS.CANCEL' | translate }}</button>
+                <button type=" button " class="btn btn-success margin-btn " (click)="modal.close( 'Ok click') " routerLink="/home ">{{ 'FORMS.VALIDATE' | translate }}</button>
+            </div>
+        </ng-template>
 
 
     </div>

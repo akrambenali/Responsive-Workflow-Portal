@@ -88,7 +88,14 @@
         "ACCPETED": "lu et accepté *",
         "SUBMIT": "Soumettre",
         "VALIDATE": "Valider",
-        "REJECT": "Rejeter"
+        "REJECT": "Rejeter",
+        "REVIEW": "Réviser",
+        "COMENT": "Commentaire",
+        "CANCEL": "Annuler",
+        "REJECTMSG": " Vous allez rejetée  la demande, veuillez confirmer",
+        "REVIEWMSG": "Vous allez envoyer une demande rectification de la demande, veuillez ajouter un commentaire",
+        "VALIDATIONMSG": "Vous alllez validé la demande, merci de confirmer "
+
 
     }
 }

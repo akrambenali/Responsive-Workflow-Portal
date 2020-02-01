@@ -87,7 +87,13 @@
         "ACCPETED": "read and accepted *",
         "SUBMIT": "Submit",
         "VALIDATE": "Validate",
-        "REJECT": "Reject "
+        "REJECT": "Reject",
+        "REVIEW": "review",
+        "COMENT": "Comment",
+        "CANCEL": "Cancel",
+        "REJECTMSG": "You will reject the request, please confirm",
+        "REVIEWMSG": "You will send a review of the request, please add  a comment",
+        "VALIDATIONMSG": "You will Validate the request, please confirm"
 
 
 

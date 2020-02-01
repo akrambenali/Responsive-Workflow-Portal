@@ -7,7 +7,7 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule, HttpClient} from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-
+import { ChartsModule } from 'ng2-charts';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -28,6 +28,8 @@ import { MyRequestPendingComponent } from './my-request-pending/my-request-pendi
 import { TasklistInPendingComponent } from './tasklist-pending/tasklist-in-pending.component';
 import { FormDetailComponent } from './form-detail/form-detail.component';
 import { FormValidationComponent } from './form-validation/form-validation.component';
+import { ReportsComponent } from './reports/reports.component';
+import { MyBarChartComponent } from './bar-chart/bar-chart.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -57,7 +59,9 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     MyRequestPendingComponent,
     TasklistInPendingComponent,
     FormDetailComponent,
-    FormValidationComponent
+    FormValidationComponent,
+    ReportsComponent,
+    MyBarChartComponent
 
   ],
   imports: [
@@ -75,7 +79,8 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
         useFactory: HttpLoaderFactory,
         deps: [HttpClient]
       }
-    })
+    }),
+    ChartsModule
 
 
   ],

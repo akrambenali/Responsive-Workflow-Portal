@@ -11,6 +11,8 @@ import { FormGeneratorComponent } from './form-generator/form-generator.componen
 import { MyRequestPendingComponent } from './my-request-pending/my-request-pending.component';
 import { FormDetailComponent } from './form-detail/form-detail.component';
 import { FormValidationComponent } from './form-validation/form-validation.component';
+import { ReportsComponent } from './reports/reports.component';
+import { MyBarChartComponent } from './bar-chart/bar-chart.component';
 
 const routes: Routes = [
 
@@ -26,6 +28,8 @@ const routes: Routes = [
   { path: 'myrequest', component: MyRequestPendingComponent},
   { path: 'formdetail', component: FormDetailComponent},
   { path: 'formvalidation' , component: FormValidationComponent},
+  { path: 'reports', component: ReportsComponent },
+  { path: 'bar-chart', component: MyBarChartComponent },
   { path: '**', component: HomeComponent },
   { path: '', redirectTo: '/login', pathMatch: 'full' }
 ];

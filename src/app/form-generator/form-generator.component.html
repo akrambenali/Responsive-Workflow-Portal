@@ -16,13 +16,13 @@
 
             </li>
             <li routerLinkActive="active">
-                <a href="#"><i class="material-icons">list</i>{{ 'MENU.REQUEST-INPROGRESS' | translate }}</a>
+                <a routerLink="/myrequest"><i class="material-icons">list</i>{{ 'MENU.REQUEST-INPROGRESS' | translate }}</a>
             </li>
             <li routerLinkActive="active">
                 <a routerLink="/myrequestdone"><i class="material-icons">done</i>{{ 'MENU.REQUEST-DONE' | translate }}</a>
             </li>
             <li routerLinkActive="active">
-                <a href="#"><i class="material-icons">assignment</i>{{ 'MENU.MYTODO' | translate }}</a>
+                <a routerLink="/mytodo"><i class="material-icons">assignment</i>{{ 'MENU.MYTODO' | translate }}</a>
             </li>
             <li routerLinkActive="active">
                 <a href="#"><i class="material-icons">assessment</i>{{ 'MENU.REPORTS' | translate }}</a>
@@ -57,7 +57,7 @@
                         <span></span>
                     </button>
                 <div class="col">
-                    <div class="float-right"><button class="btn" routerLink="/delegation"><i class="material-icons">settings_applications</i>{{ 'MENU.SETTINGS' | translate }}</button></div>
+                    <div class="float-right"><button class="btn" routerLink="/delegation"><i class="material-icons">settings_applications</i></button></div>
                 </div>
 
                 <!--    <div>
