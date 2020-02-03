@@ -13,6 +13,9 @@ import { FormDetailComponent } from './form-detail/form-detail.component';
 import { FormValidationComponent } from './form-validation/form-validation.component';
 import { ReportsComponent } from './reports/reports.component';
 import { MyBarChartComponent } from './bar-chart/bar-chart.component';
+import { MyRadarChartComponent } from './my-radar-chart/my-radar-chart.component';
+import { MyPieChartComponent } from './my-pie-chart/my-pie-chart.component';
+import { MyDoughnutChartComponent } from './my-doughnut-chart/my-doughnut-chart.component';
 
 const routes: Routes = [
 
@@ -30,6 +33,9 @@ const routes: Routes = [
   { path: 'formvalidation' , component: FormValidationComponent},
   { path: 'reports', component: ReportsComponent },
   { path: 'bar-chart', component: MyBarChartComponent },
+  { path: 'doughnut-chart', component: MyDoughnutChartComponent },
+  { path: 'radar-chart', component: MyRadarChartComponent },
+  { path: 'pie-chart', component: MyPieChartComponent },
   { path: '**', component: HomeComponent },
   { path: '', redirectTo: '/login', pathMatch: 'full' }
 ];
@@ -39,3 +45,5 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
+

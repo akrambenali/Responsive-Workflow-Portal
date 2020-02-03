@@ -8,4 +8,6 @@ export interface Task {
   initDate: string;
   slaDate: number;
   action: string;
+  quickValidation: number;
+
 }

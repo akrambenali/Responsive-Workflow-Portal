@@ -8,15 +8,31 @@ export class MyBarChartComponent implements OnInit {
   constructor() { }
   public barChartOptions = {
     scaleShowVerticalLines: false,
-    responsive: true
+    responsive: true,
+    scales: {
+     yAxes: [{
+       ticks: {
+         beginAtZero: true
+       }
+     }]
+    },
   };
-  public barChartLabels = ['2006', '2007', '2008', '2009', '2010', '2011', '2012'];
+  public barChartLabels = [
+    'Mohamed Akram BENALI',
+    'Yasmine Feriel OLDACHE',
+    'Riad-faïçel MESSEDAA',
+    'Hicham GHERBI',
+    'Toufik ZERROUG',
+    'Mohammed Lamine MEBAREK'
+  ];
   public barChartType = 'bar';
   public barChartLegend = true;
   public barChartData = [
-    { data: [65, 59, 80, 81, 56, 55, 40], label: 'Series A' },
-    { data: [28, 48, 40, 19, 86, 27, 90], label: 'Series B' }
+   // { data: [10, 11, 15, 8, 6, 20], label: 'Open task' },
+    { data: [10, 11, 15, 8, 6, 20], label: 'Open task' },
+    { data: [10, 6, 10, 15, 12, 27], label: 'Closed task' }
   ];
+
   ngOnInit() {
   }
 }

@@ -73,7 +73,7 @@
 
             </div>
         </nav>
-        <div class="container">
+        <!--  <div class="container">
             <ul class="nav nav-tabs">
                 <li class="nav-item">
                     <a class="nav-link" routerLink="/bar-chart">Bar Chart</a>
@@ -89,7 +89,41 @@
                 </li>
             </ul>
             <div>
-                <router-outlet></router-outlet>
-            </div>
-        </div>
+                <app-bar-chart></app-bar-chart>
+            </div> -->
+        <ng-container [ngSwitch]="state">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link" (click)="goTo('bar-chart')">Bar Chart</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" (click)="goTo('doughnut-chart')">Doughnut Chart</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" (click)="goTo('radar-chart')">Radar Chart</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" (click)="goTo('pie-chart')">Pie Chart</a>
+                </li>
+            </ul>
+
+            <section *ngSwitchCase="'bar-chart'">
+
+                <app-bar-chart></app-bar-chart>
+            </section>
+
+            <section *ngSwitchCase="'doughnut-chart'">
+
+                <app-my-doughnut-chart></app-my-doughnut-chart>
+            </section>
+
+            <section *ngSwitchCase="'radar-chart'">
+
+                <app-my-radar-chart></app-my-radar-chart>
+            </section>
+            <section *ngSwitchCase="'pie-chart'">
+
+                <app-my-pie-chart></app-my-pie-chart>
+            </section>
+        </ng-container>
     </div>

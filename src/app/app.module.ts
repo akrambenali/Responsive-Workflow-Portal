@@ -30,6 +30,9 @@ import { FormDetailComponent } from './form-detail/form-detail.component';
 import { FormValidationComponent } from './form-validation/form-validation.component';
 import { ReportsComponent } from './reports/reports.component';
 import { MyBarChartComponent } from './bar-chart/bar-chart.component';
+import { MyDoughnutChartComponent } from './my-doughnut-chart/my-doughnut-chart.component';
+import { MyRadarChartComponent } from './my-radar-chart/my-radar-chart.component';
+import { MyPieChartComponent } from './my-pie-chart/my-pie-chart.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -61,7 +64,10 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     FormDetailComponent,
     FormValidationComponent,
     ReportsComponent,
-    MyBarChartComponent
+    MyBarChartComponent,
+    MyDoughnutChartComponent,
+    MyRadarChartComponent,
+    MyPieChartComponent
 
   ],
   imports: [

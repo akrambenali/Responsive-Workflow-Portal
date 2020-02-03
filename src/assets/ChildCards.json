@@ -1,31 +1,7 @@
 [{
-        "id": "mailing",
-        "title": "Mailing",
-        "subtitle": "Really, they are!",
-        "imgsource": "assets/IT.jpg",
-        "category": "IT",
-        "redirectionurl": ""
-    },
-    {
-        "id": "daris",
-        "title": "DARIS",
-        "subtitle": "Really, they are!",
-        "imgsource": "assets/IT.jpg",
-        "category": "IT",
-        "redirectionurl": ""
-    },
-    {
-        "id": "vpn",
-        "title": "VPN",
-        "subtitle": "Really, they are!",
-        "imgsource": "assets/IT.jpg",
-        "category": "IT",
-        "redirectionurl": ""
-    },
-    {
-        "id": "acl",
-        "title": "ACL",
-        "subtitle": "Really, they are!",
+        "id": "DARI",
+        "title": "DARI",
+        "subtitle": "IT resource access request",
         "imgsource": "assets/IT.jpg",
         "category": "IT",
         "redirectionurl": ""
@@ -33,39 +9,63 @@
     {
         "id": "daris",
         "title": "DARI",
-        "subtitle": "Really, they are!",
+        "subtitle": "IT resource access request",
+        "imgsource": "assets/IT.jpg",
+        "category": "IT",
+        "redirectionurl": ""
+    },
+    {
+        "id": "vpn",
+        "title": "DARI",
+        "subtitle": "IT resource access request",
+        "imgsource": "assets/IT.jpg",
+        "category": "IT",
+        "redirectionurl": ""
+    },
+    {
+        "id": "acl",
+        "title": "DARI",
+        "subtitle": "IT resource access request",
+        "imgsource": "assets/IT.jpg",
+        "category": "IT",
+        "redirectionurl": ""
+    },
+    {
+        "id": "daris",
+        "title": "DARI",
+        "subtitle": "IT resource access request",
         "imgsource": "assets/IT.jpg",
         "category": "IT",
         "redirectionurl": ""
     },
     {
         "id": "mailing",
-        "title": "Mailing",
-        "subtitle": "Really, they are!",
+        "title": "DARI",
+        "subtitle": "IT resource access request",
         "imgsource": "assets/IT.jpg",
         "category": "MKT",
         "redirectionurl": ""
     },
     {
         "id": "daris",
-        "title": "DARIS",
-        "subtitle": "Really, they are!",
+        "title": "DARI",
+        "subtitle": "IT resource access request",
         "imgsource": "assets/IT.jpg",
         "category": "MKT",
         "redirectionurl": ""
     },
     {
         "id": "vpn",
-        "title": "VPN",
-        "subtitle": "Really, they are!",
+        "title": "DARI",
+        "subtitle": "IT resource access request",
         "imgsource": "assets/IT.jpg",
         "category": "MKT",
         "redirectionurl": ""
     },
     {
         "id": "acl",
-        "title": "ACL",
-        "subtitle": "Really, they are!",
+        "title": "DARI",
+        "subtitle": "IT resource access request",
         "imgsource": "assets/IT.jpg",
         "category": "MKT",
         "redirectionurl": ""
@@ -73,39 +73,15 @@
     {
         "id": "dari",
         "title": "DARI",
-        "subtitle": "Really, they are!",
+        "subtitle": "IT resource access request",
         "imgsource": "assets/IT.jpg",
         "category": "MKT",
         "redirectionurl": ""
     },
     {
         "id": "mailing",
-        "title": "Mailing",
-        "subtitle": "Really, they are!",
-        "imgsource": "assets/IT.jpg",
-        "category": "HR",
-        "redirectionurl": ""
-    },
-    {
-        "id": "daris",
-        "title": "DARIS",
-        "subtitle": "Really, they are!",
-        "imgsource": "assets/IT.jpg",
-        "category": "HR",
-        "redirectionurl": ""
-    },
-    {
-        "id": "vpn",
-        "title": "VPN",
-        "subtitle": "Really, they are!",
-        "imgsource": "assets/IT.jpg",
-        "category": "HR",
-        "redirectionurl": ""
-    },
-    {
-        "id": "acl",
-        "title": "ACL",
-        "subtitle": "Really, they are!",
+        "title": "DARI",
+        "subtitle": "IT resource access request",
         "imgsource": "assets/IT.jpg",
         "category": "HR",
         "redirectionurl": ""
@@ -113,39 +89,39 @@
     {
         "id": "daris",
         "title": "DARI",
-        "subtitle": "Really, they are!",
+        "subtitle": "IT resource access request",
+        "imgsource": "assets/IT.jpg",
+        "category": "HR",
+        "redirectionurl": ""
+    },
+    {
+        "id": "vpn",
+        "title": "DARI",
+        "subtitle": "IT resource access request",
+        "imgsource": "assets/IT.jpg",
+        "category": "HR",
+        "redirectionurl": ""
+    },
+    {
+        "id": "acl",
+        "title": "DARI",
+        "subtitle": "IT resource access request",
+        "imgsource": "assets/IT.jpg",
+        "category": "HR",
+        "redirectionurl": ""
+    },
+    {
+        "id": "daris",
+        "title": "DARI",
+        "subtitle": "IT resource access request",
         "imgsource": "assets/IT.jpg",
         "category": "HR",
         "redirectionurl": ""
     },
     {
         "id": "mailing",
-        "title": "Mailing",
-        "subtitle": "Really, they are!",
-        "imgsource": "assets/IT.jpg",
-        "category": "Procurement",
-        "redirectionurl": ""
-    },
-    {
-        "id": "daris",
-        "title": "DARIS",
-        "subtitle": "Really, they are!",
-        "imgsource": "assets/IT.jpg",
-        "category": "Procurement",
-        "redirectionurl": ""
-    },
-    {
-        "id": "vpn",
-        "title": "VPN",
-        "subtitle": "Really, they are!",
-        "imgsource": "assets/IT.jpg",
-        "category": "Procurement",
-        "redirectionurl": ""
-    },
-    {
-        "id": "acl",
-        "title": "ACL",
-        "subtitle": "Really, they are!",
+        "title": "DARI",
+        "subtitle": "IT resource access request",
         "imgsource": "assets/IT.jpg",
         "category": "Procurement",
         "redirectionurl": ""
@@ -153,39 +129,39 @@
     {
         "id": "daris",
         "title": "DARI",
-        "subtitle": "Really, they are!",
+        "subtitle": "IT resource access request",
+        "imgsource": "assets/IT.jpg",
+        "category": "Procurement",
+        "redirectionurl": ""
+    },
+    {
+        "id": "vpn",
+        "title": "DARI",
+        "subtitle": "IT resource access request",
+        "imgsource": "assets/IT.jpg",
+        "category": "Procurement",
+        "redirectionurl": ""
+    },
+    {
+        "id": "acl",
+        "title": "DARI",
+        "subtitle": "IT resource access request",
+        "imgsource": "assets/IT.jpg",
+        "category": "Procurement",
+        "redirectionurl": ""
+    },
+    {
+        "id": "daris",
+        "title": "DARI",
+        "subtitle": "IT resource access request",
         "imgsource": "assets/IT.jpg",
         "category": "Procurement",
         "redirectionurl": ""
     },
     {
         "id": "mailing",
-        "title": "Mailing",
-        "subtitle": "Really, they are!",
-        "imgsource": "assets/IT.jpg",
-        "category": "Finance",
-        "redirectionurl": ""
-    },
-    {
-        "id": "daris",
-        "title": "DARIS",
-        "subtitle": "Really, they are!",
-        "imgsource": "assets/IT.jpg",
-        "category": "Finance",
-        "redirectionurl": ""
-    },
-    {
-        "id": "vpn",
-        "title": "VPN",
-        "subtitle": "Really, they are!",
-        "imgsource": "assets/IT.jpg",
-        "category": "Finance",
-        "redirectionurl": ""
-    },
-    {
-        "id": "acl",
-        "title": "ACL",
-        "subtitle": "Really, they are!",
+        "title": "DARI",
+        "subtitle": "IT resource access request",
         "imgsource": "assets/IT.jpg",
         "category": "Finance",
         "redirectionurl": ""
@@ -193,7 +169,31 @@
     {
         "id": "daris",
         "title": "DARI",
-        "subtitle": "Really, they are!",
+        "subtitle": "IT resource access request",
+        "imgsource": "assets/IT.jpg",
+        "category": "Finance",
+        "redirectionurl": ""
+    },
+    {
+        "id": "vpn",
+        "title": "DARI",
+        "subtitle": "IT resource access request",
+        "imgsource": "assets/IT.jpg",
+        "category": "Finance",
+        "redirectionurl": ""
+    },
+    {
+        "id": "acl",
+        "title": "DARI",
+        "subtitle": "IT resource access request",
+        "imgsource": "assets/IT.jpg",
+        "category": "Finance",
+        "redirectionurl": ""
+    },
+    {
+        "id": "daris",
+        "title": "DARI",
+        "subtitle": "IT resource access request",
         "imgsource": "assets/IT.jpg",
         "category": "Finance",
         "redirectionurl": ""

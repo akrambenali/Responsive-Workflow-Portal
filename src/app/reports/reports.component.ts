@@ -9,6 +9,11 @@ import { TranslateService } from '@ngx-translate/core';
 export class ReportsComponent implements OnInit {
 
   status = false;
+  public state = 'bar-chart';
+
+  public goTo(state) {
+    this.state = state;
+  }
   clickEvent() {
     this.status = !this.status;
   }

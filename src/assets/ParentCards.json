@@ -1,40 +1,40 @@
 [{
         "title": "Human Resources",
-        "subtitle": "Really, they are!",
+        "subtitle": "Human resources process",
         "imgsource": "assets/RH.jpg",
-        "detail": "Something pretty..",
+        "detail": "..",
         "category": "HR",
         "redirectionurl": "HumanResources"
     },
     {
         "title": "Procurement",
-        "subtitle": "Really, they are!",
+        "subtitle": "Procurement processs",
         "imgsource": "assets/PROCURMENT.jpg",
-        "detail": "Something pretty..",
+        "detail": "..",
         "category": "Procurement",
         "redirectionurl": "/HumanResources"
     },
     {
         "title": "Marketing",
-        "subtitle": "Really, they are!",
+        "subtitle": "Marketing b2c process",
         "imgsource": "assets/MARKETING.jpg",
-        "detail": "Something pretty..",
+        "detail": "..",
         "category": "MKT",
         "redirectionurl": "/HumanResources"
     },
     {
         "title": "Finance",
-        "subtitle": "Really, they are!",
+        "subtitle": "Finance process",
         "imgsource": "assets/FINANCE.jpg",
-        "detail": "Something pretty..",
+        "detail": "..",
         "category": "Finance",
         "redirectionurl": "/HumanResources"
     },
     {
         "title": "Information Technology",
-        "subtitle": "Really, they are!",
+        "subtitle": "Information Technology internal process",
         "imgsource": "assets/IT.jpg",
-        "detail": "Something pretty..",
+        "detail": "..",
         "category": "IT",
         "redirectionurl": "/HumanResources"
     }

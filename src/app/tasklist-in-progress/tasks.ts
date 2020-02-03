@@ -3,7 +3,7 @@ import { Task } from './task';
 export const TASKS: Task[] = [
   {
     id: 1,
-    initator: 'Benali Akram',
+    initator: 'Mohamed Akram BENALI',
     process: 'SSD',
     description: 'SSD DETAILS',
     initDate: '11-11-2019',
@@ -13,7 +13,7 @@ export const TASKS: Task[] = [
   },
   {
     id: 2,
-    initator: 'Yasmine oldache',
+    initator: 'Yasmine Feriel OLDACHE',
     process: 'SSD',
     description: 'SSD DETAILS',
     initDate: '20-11-2019',
@@ -23,7 +23,7 @@ export const TASKS: Task[] = [
   },
   {
     id: 3,
-    initator: 'Benali Akram',
+    initator: 'Riad-faïçel MESSEDAA',
     process: 'SSD',
     description: 'SSD DETAILS',
     initDate: '20-11-2019',
@@ -33,7 +33,7 @@ export const TASKS: Task[] = [
   },
   {
     id: 4,
-    initator: 'Benali Akram',
+    initator: 'Hicham GHERBI',
     process: 'SSD',
     description: 'SSD DETAILS',
     initDate: '20-11-2019',
@@ -43,7 +43,7 @@ export const TASKS: Task[] = [
   },
   {
     id: 5,
-    initator: 'Benali Akram',
+    initator: 'Mohamed Akram BENALI',
     process: 'SSD',
     description: 'SSD DETAILS',
     initDate: '20-11-2019',
@@ -53,7 +53,7 @@ export const TASKS: Task[] = [
   },
   {
     id: 6,
-    initator: 'Riad Meseda',
+    initator: 'Hicham GHERBI',
     process: 'SSD',
     description: 'SSD DETAILS',
     initDate: '20-11-2019',
@@ -63,7 +63,7 @@ export const TASKS: Task[] = [
   },
   {
     id: 7,
-    initator: 'Benali Akram',
+    initator: 'Mohamed BOUTOUIGA',
     process: 'SSD',
     description: 'SSD DETAILS',
     initDate: '20-11-2019',
@@ -73,7 +73,7 @@ export const TASKS: Task[] = [
   },
   {
     id: 8,
-    initator: 'Benali Akram',
+    initator: 'Malek HACHID',
     process: 'SSD',
     description: 'SSD DETAILS',
     initDate: '20-11-2019',
@@ -83,7 +83,7 @@ export const TASKS: Task[] = [
   },
   {
     id: 9,
-    initator: 'Benali Akram',
+    initator: 'Mohamed BOUTOUIGA',
     process: 'SSD',
     description: 'SSD DETAILS',
     initDate: '20-11-2019',
@@ -93,7 +93,7 @@ export const TASKS: Task[] = [
   },
   {
     id: 10,
-    initator: 'Benali Akram',
+    initator: 'Malek HACHID',
     process: 'SSD',
     description: 'SSD DETAILS',
     initDate: '20-11-2019',
@@ -103,7 +103,7 @@ export const TASKS: Task[] = [
   },
   {
     id: 11,
-    initator: 'Benali Akram',
+    initator: 'Toufik ZERROUG',
     process: 'SSD',
     description: 'SSD DETAILS',
     initDate: '20-11-2019',
@@ -113,7 +113,7 @@ export const TASKS: Task[] = [
   },
   {
     id: 12,
-    initator: 'Benali Akram',
+    initator: 'Toufik ZERROUG',
     process: 'DARI',
     description: 'SSD DETAILS',
     initDate: '20-11-2019',
@@ -123,7 +123,7 @@ export const TASKS: Task[] = [
   },
   {
     id: 13,
-    initator: 'Benali Akram',
+    initator: 'Mohammed Lamine MEBAREK',
     process: 'SSD',
     description: 'SSD DETAILS',
     initDate: '20-11-2019',
