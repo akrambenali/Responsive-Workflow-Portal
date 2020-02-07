@@ -91,8 +91,12 @@
             <div>
                 <app-bar-chart></app-bar-chart>
             </div> -->
+        <h4 class="dark-purple title-card"> Reports Page</h4>
         <ng-container [ngSwitch]="state">
             <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link" (click)="goTo('waterfall')">Waterfall Report</a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link" (click)="goTo('bar-chart')">Bar Chart</a>
                 </li>
@@ -106,6 +110,11 @@
                     <a class="nav-link" (click)="goTo('pie-chart')">Pie Chart</a>
                 </li>
             </ul>
+
+            <section *ngSwitchCase="'waterfall'">
+
+                <app-waterfall-report></app-waterfall-report>
+            </section>
 
             <section *ngSwitchCase="'bar-chart'">
 

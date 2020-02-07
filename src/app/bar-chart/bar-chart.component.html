@@ -1,6 +1,35 @@
-<div>
-    <div style="display: block">
-        <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions" [legend]="barChartLegend" [chartType]="barChartType">
+<div class="container">
+    <h4 class="dark-purple title-card">Global Reports</h4>
+    <div class="row">
+        <div class="col-lg-9">
+
+            <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions" [legend]="barChartLegend" [chartType]="barChartType">
     </canvas>
+        </div>
+        <div class="col-lg-3">
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-outline-primary" (click)="filterDay()">Day</button>
+                <button type="button" class="btn btn-outline-primary" (click)="filterWeek()">Week</button>
+                <button type="button" class="btn btn-outline-primary" (click)="filterMonth()">Month</button>
+            </div>
+            <br>
+            <div class="col-lg-12">
+
+                <label for="inputState">select user</label>
+                <select id="inputState" class="form-control">
+                <option [value]="user" *ngFor="let user of userList">{{user}}</option>
+            </select>
+                <button type=" button " class="btn btn-outline-primary margin-btn " (click)="filterByUser()">Filter</button>
+            </div>
+
+
+            <!-- <button mat-button mat-raised-button color="primary" (click)="randomizeDisplay()">Update</button>
+            <button mat-button mat-raised-button color="primary" (click)="randomize()">change</button>
+            <canvas baseChart [datasets]="barChartData2" [labels]="barChartLabels2" [options]="barChartOptions2" [legend]="barChartLegend2" [chartType]="barChartType2">
+    </canvas> -->
+        </div>
     </div>
+
+
+
 </div>

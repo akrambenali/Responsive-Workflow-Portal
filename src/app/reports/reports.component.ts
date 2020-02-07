@@ -9,7 +9,7 @@ import { TranslateService } from '@ngx-translate/core';
 export class ReportsComponent implements OnInit {
 
   status = false;
-  public state = 'bar-chart';
+  public state = 'waterfall';
 
   public goTo(state) {
     this.state = state;
