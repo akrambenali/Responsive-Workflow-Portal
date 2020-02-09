@@ -1,11 +1,19 @@
 <form>
     <h3 class="dark-purple title-card">{{ 'DELEGATION.DELEGATE' | translate }}</h3>
     <div class="form-row">
-        <div class="form-group col-md-4">
-            <label for="inputEmail4">{{ 'DELEGATION.NAME' | translate }}</label>
-            <input type="email" class="form-control" id="inputEmail4" value="name" #box (keyup)="0" placeholder="{{ 'DELEGATION.NAME' | translate }}">
+        <div class="form-group col-md-6">
+            <label for="inputState">{{ 'FORMS.APPNAME' | translate }}</label>
+            <select id="inputState" class="form-control">
+                    <option [value]="category" *ngFor="let category of categories">{{category}}</option>
+            </select>
         </div>
-        <div class="form-group col-md-4">
+        <div class="form-group col-md-6">
+            <label for="inputState">{{ 'FORMS.APPNAME' | translate }}</label>
+            <select id="inputState" class="form-control">
+                    <option [value]="process" *ngFor="let process of Process">{{process}}</option>
+            </select>
+        </div>
+        <div class="form-group col-md-6">
             <label for="inputEmail5">{{ 'DELEGATION.FROM' | translate }} </label>
             <div class="input-group">
                 <input class="form-control" id="inputEmail5" placeholder="yyyy-mm-dd" name="dp" [(ngModel)]="model1" ngbDatepicker #d="ngbDatepicker">
@@ -14,7 +22,7 @@
                 </div>
             </div>
         </div>
-        <div class="form-group col-md-4">
+        <div class="form-group col-md-6">
             <label for="inputEmail6">{{ 'DELEGATION.TO' | translate }}</label>
             <div class="input-group">
                 <input class="form-control" id="inputEmail6" placeholder="yyyy-mm-dd" name="da" [(ngModel)]="model2" ngbDatepicker #a="ngbDatepicker">

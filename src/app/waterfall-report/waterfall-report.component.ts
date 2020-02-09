@@ -7,6 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WaterfallReportComponent implements OnInit {
 
+categories = [
+'IT',
+'FINANCE',
+'MKT',
+'HR',
+'PROCURMENT'
+];
+Process = [
+'Daris',
+'Avance sur Salaire',
+'Ordre Mission',
+'Activation SIM'
+];
   constructor() { }
 
   ngOnInit() {

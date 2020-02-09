@@ -1,0 +1,23 @@
+<table class="table white">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">step</th>
+            <th scope="col">opentasks</th>
+            <th scope="col">closedtasks</th>
+            <th scope="col">avg</th>
+            <th scope="col">max</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let step of steps">
+            <th scope="row">{{step.position}}</th>
+            <td>{{step.step}}</td>
+            <td>{{step.opentasks}}</td>
+            <td>{{step.closedtasks}}</td>
+            <td [ngClass]="{'red': step.avg === 10,'green': step.avg === 1}">{{step.avg}}</td>
+            <td [ngClass]="{'red': step.max === 20,'green': step.max === 2 ,'yellow': step.max === 15  }">{{step.max}}</td>
+        </tr>
+
+    </tbody>
+</table>
