@@ -9,6 +9,7 @@ import { TranslateService } from '@ngx-translate/core';
 export class ReportsComponent implements OnInit {
 
   status = false;
+  showReport = false;
   public state = 'waterfall';
 
   public goTo(state) {
@@ -16,6 +17,10 @@ export class ReportsComponent implements OnInit {
   }
   clickEvent() {
     this.status = !this.status;
+  }
+  clickReport() {
+    this.showReport = true;
+    console.log('1');
   }
   constructor(public translate: TranslateService) {
     translate.addLangs(['en', 'fr']);

@@ -135,6 +135,8 @@
                 <app-my-pie-chart></app-my-pie-chart>
             </section>
         </ng-container>
+        <div *ngIf="showReport">
+            <app-waterfall-list></app-waterfall-list>
+        </div>
 
-        <app-waterfall-list></app-waterfall-list>
     </div>

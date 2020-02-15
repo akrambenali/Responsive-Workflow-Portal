@@ -1,0 +1,11 @@
+<div class="container">
+    <h4 class="dark-purple title-card">Global Reports</h4>
+    <div class="row">
+        <div class="col-lg-9">
+            <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions" [legend]="barChartLegend" [chartType]="barChartType" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
+
+            <button mat-button mat-raised-button color="primary" (click)="randomize()">Update</button>
+
+        </div>
+    </div>
+</div>

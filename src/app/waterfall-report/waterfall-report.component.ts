@@ -20,6 +20,12 @@ Process = [
 'Ordre Mission',
 'Activation SIM'
 ];
+  showReport = false;
+
+  clickReport() {
+    this.showReport = true;
+    console.log('2');
+  }
   constructor() { }
 
   ngOnInit() {

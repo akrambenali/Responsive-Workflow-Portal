@@ -35,6 +35,7 @@ import { MyRadarChartComponent } from './my-radar-chart/my-radar-chart.component
 import { MyPieChartComponent } from './my-pie-chart/my-pie-chart.component';
 import { WaterfallReportComponent } from './waterfall-report/waterfall-report.component';
 import { WaterfallListComponent } from './waterfall-list/waterfall-list.component';
+import { DynamiqueWaterfallChartComponent } from './dynamique-waterfall-chart/dynamique-waterfall-chart.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -71,7 +72,8 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     MyRadarChartComponent,
     MyPieChartComponent,
     WaterfallReportComponent,
-    WaterfallListComponent
+    WaterfallListComponent,
+    DynamiqueWaterfallChartComponent
 
   ],
   imports: [

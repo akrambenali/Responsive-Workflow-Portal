@@ -16,6 +16,7 @@ import { MyBarChartComponent } from './bar-chart/bar-chart.component';
 import { MyRadarChartComponent } from './my-radar-chart/my-radar-chart.component';
 import { MyPieChartComponent } from './my-pie-chart/my-pie-chart.component';
 import { MyDoughnutChartComponent } from './my-doughnut-chart/my-doughnut-chart.component';
+import { DynamiqueWaterfallChartComponent } from './dynamique-waterfall-chart/dynamique-waterfall-chart.component';
 
 const routes: Routes = [
 
@@ -36,6 +37,7 @@ const routes: Routes = [
   { path: 'doughnut-chart', component: MyDoughnutChartComponent },
   { path: 'radar-chart', component: MyRadarChartComponent },
   { path: 'pie-chart', component: MyPieChartComponent },
+  { path: 'dynamiquechart', component: DynamiqueWaterfallChartComponent},
   { path: '**', component: HomeComponent },
   { path: '', redirectTo: '/login', pathMatch: 'full' }
 ];

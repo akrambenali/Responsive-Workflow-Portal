@@ -10,7 +10,7 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let step of steps">
+        <tr *ngFor="let step of steps" routerLink="/dynamiquechart">
             <th scope="row">{{step.position}}</th>
             <td>{{step.step}}</td>
             <td>{{step.opentasks}}</td>

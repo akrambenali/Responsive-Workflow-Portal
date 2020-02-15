@@ -1,5 +1,5 @@
 <form>
-    <h3 class="dark-purple title-card">{{ 'DELEGATION.DELEGATE' | translate }}</h3>
+    <h3 class="dark-purple title-card">test</h3>
     <div class="form-row">
         <div class="form-group col-md-6">
             <label for="inputState">{{ 'FORMS.APPNAME' | translate }}</label>
@@ -35,27 +35,15 @@
 
     </div>
 
-    <button type="submit" class="btn btn-primary btn-lg " (click)="open(content)">{{ 'DELEGATION.SUBMIT' | translate }}</button>
+    <button type="submit" class="btn btn-primary btn-lg " (click)="clickReport()">{{ 'DELEGATION.SUBMIT' | translate }}</button>
     <hr/>
     <!-- <pre>Model: {{ model1 | json }}</pre>
             <pre>Model: {{ model2 | json }}</pre> -->
 </form>
 
-<ng-template #content let-modal>
-    <div class="modal-header">
-        <h4 class="modal-title" id="modal-title">{{ 'DELEGATION.DELEGATE' | translate }}</h4>
-        <button type="button" class="close" aria-describedby="modal-title" (click)="modal.dismiss('Cross click')">
-      <span aria-hidden="true">&times;</span>
-    </button>
-    </div>
-    <div class="modal-body">
-        <p><strong>Are you sure you want to select <span class="text-primary">"{{box.value}}"</span> as Validator</strong></p>
-        <p> from : {{ model1.day }}-{{ model1.month }}-{{ model1.year }} to : {{ model2.day }}-{{ model2.month }}-{{ model2.year }}
-            <span class="text-info">This operation can be changed.</span>
-        </p>
-    </div>
-    <div class="modal-footer">
-        <button type="button" class="btn btn-outline-secondary" (click)="modal.dismiss('cancel click')">Cancel</button>
-        <button type="button" class="btn btn-success" (click)="modal.close('Ok click')" routerLink="/home">Ok</button>
-    </div>
-</ng-template>
+<ng-container *ngIf="showReport">
+
+
+    <app-waterfall-list></app-waterfall-list>
+
+</ng-container>
