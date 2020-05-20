@@ -51,7 +51,8 @@
         "NAME": "Name",
         "FROM": "From",
         "TO": "To",
-        "DELEGATE": "Delegation"
+        "DELEGATE": "Delegation",
+        "STATUS": "Status"
     },
     "FORMS": {
         "ID": "Employee id",
@@ -94,6 +95,7 @@
         "REJECTMSG": "You will reject the request, please confirm",
         "REVIEWMSG": "You will send a review of the request, please add  a comment",
         "VALIDATIONMSG": "You will Validate the request, please confirm"
+
 
 
 

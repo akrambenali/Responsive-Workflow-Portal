@@ -52,7 +52,9 @@
         "NAME": "Nom",
         "FROM": "De",
         "TO": "A",
-        "DELEGATE": "Délégation"
+        "DELEGATE": "Délégation",
+        "STATUS": "Status"
+
     },
     "FORMS": {
         "ID": "Matricule",

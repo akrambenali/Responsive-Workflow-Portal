@@ -1,4 +1,4 @@
-<table class="table white">
+<table class="table white" id="myTable">
     <thead>
         <tr>
             <th scope="col">#</th>
@@ -10,7 +10,7 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let step of steps" routerLink="/dynamiquechart">
+        <tr *ngFor="let step of steps" data-toggle="collapse" data-target="#demo1" data-parent="#myTable">
             <th scope="row">{{step.position}}</th>
             <td>{{step.step}}</td>
             <td>{{step.opentasks}}</td>
@@ -18,6 +18,12 @@
             <td [ngClass]="{'red': step.avg === 10,'green': step.avg === 1}">{{step.avg}}</td>
             <td [ngClass]="{'red': step.max === 20,'green': step.max === 2 ,'yellow': step.max === 15  }">{{step.max}}</td>
         </tr>
-
+    </tbody>
+    <tbody id="demo1" class="collapse">
+        <tr *ngFor="let step of steps">
+            <td colspan="6" class="hiddenRow">
+                <div>{{step.step}}</div>
+            </td>
+        </tr>
     </tbody>
 </table>

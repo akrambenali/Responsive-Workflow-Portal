@@ -22,6 +22,7 @@
                 </div>
             </div>
         </div>
+
         <div class="form-group col-md-6">
             <label for="inputEmail6">{{ 'DELEGATION.TO' | translate }}</label>
             <div class="input-group">
@@ -29,6 +30,14 @@
                 <div class="input-group-append">
                     <button class="btn btn-outline-secondary calendar" (click)="a.toggle()" type="button"><i class="material-icons">today</i></button>
                 </div>
+            </div>
+        </div>
+        <div class="form-group col-md-6">
+            <label for="inputEmail6">{{ 'DELEGATION.STATUS' | translate }}</label>
+            <div class="input-group">
+                <select id="inputState" class="form-control">
+                    <option [value]="category" *ngFor="let category of categories">{{category}}</option>
+                </select>
             </div>
         </div>
 
